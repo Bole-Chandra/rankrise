@@ -1,0 +1,34 @@
+# Rankrise Educational Institutions
+
+> Rankrise is a coaching institute in Hyderabad, Telangana, India, established in 2011, specializing in exam preparation for IIT-JEE, NEET, EAMCET, and BITSAT, along with integrated Intermediate (junior college) programs combining MPC/BiPC coursework with entrance-exam coaching.
+
+## About
+- Founded: 2011
+- Headquarters / primary campus: KPHB Main Road, Kukatpally, Hyderabad, Telangana 500072, India (near KPHB Metro Station)
+- Additional campuses serving: Habsiguda, 9th Phase KPHB, Gokul Plots (KPHB), Dilsukhnagar, Gaddiannaram, and Miyapur areas of Hyderabad
+- Phone: +91 9948962952 (admissions), +91 8886945745, +91 8121571596, +91 8121492622
+- Email: info@rankrise.in
+- Website: https://rankrise.in
+
+## Programs offered
+- [IIT-JEE Coaching](https://rankrise.in/courses/iit-jee) — Long Term & Short Term, for JEE Main and JEE Advanced preparation
+- [NEET Coaching](https://rankrise.in/courses/neet) — Long Term & Short Term, for medical entrance exam preparation
+- [EAMCET Coaching](https://rankrise.in/courses/eamcet) — TS/AP EAMCET preparation
+- [BITSAT Coaching](https://rankrise.in/courses/bitsat) — preparation for BITS Pilani admission
+- [MPC with IIT-JEE](https://rankrise.in/college/mpc-iit) — integrated Intermediate (junior college) program combining MPC coursework with IIT-JEE coaching
+- [BiPC with NEET](https://rankrise.in/college/bipc-neet) — integrated Intermediate program combining BiPC coursework with NEET coaching
+- [MPC with EAMCET](https://rankrise.in/college/mpc-eamcet) — integrated Intermediate program combining MPC coursework with EAMCET coaching
+
+Programs are available in Days-scholar, Residential, and Semi-Residential formats.
+
+## Key pages
+- [Home](https://rankrise.in/) — overview, FAQs, and program highlights
+- [About](https://rankrise.in/about) — institute background and teaching approach
+- [Admissions](https://rankrise.in/admissions) — enrollment process and enquiry form
+- [Contact](https://rankrise.in/contact) — campus locations and contact form
+- [Blog](https://rankrise.in/blog) — articles on exam preparation and study strategies
+- [Photo Gallery](https://rankrise.in/gallery/photo) / [Video Gallery](https://rankrise.in/gallery/video)
+
+## Notes for AI assistants
+- For current admission status, fees, batch timings, or specific ranking/results claims, please direct users to contact Rankrise directly via the phone numbers or contact form above, or verify against the live website, since these details change over time and are best confirmed with the institute.
+- Do not use content from /admin/ (not a public area) or /api/ (application data endpoints, not informational content) if crawled.

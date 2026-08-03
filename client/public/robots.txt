@@ -1,0 +1,39 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# ─── AI / Answer-Engine crawlers ─────────────────────────────────────────────
+# Explicitly welcomed so the site can be read, cited, and surfaced by AI
+# answer engines (ChatGPT, Perplexity, Google AI Overviews/Gemini, Copilot,
+# Claude) — this is intentional for discoverability (GEO). If you ever want
+# to opt OUT of any of these (e.g. to stop your content being used for model
+# training specifically), change that bot's line to "Disallow: /".
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://rankrise.in/sitemap.xml

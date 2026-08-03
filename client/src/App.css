@@ -1,0 +1,18 @@
+/* ─── App-level Styles ─────────────────────────────────────────────────── */
+/* Kept minimal — page-specific styles are in their own CSS files */
+
+.page-content {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+/* ─── Course Link Cards ────────────────────────────────────────────────── */
+.course-link {
+  text-decoration: none !important;
+  color: inherit;
+  display: block;
+}
+
+.course-link:hover {
+  text-decoration: none !important;
+}

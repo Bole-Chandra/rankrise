@@ -1,0 +1,187 @@
+/* ─── Footer Background & Layout ─────────────────────────────────────────── */
+.footer-bg {
+  background-image: url('/assets/public/students.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 85, 4, 0.85); /* Dark green overlay */
+  z-index: 1;
+}
+
+.custom-footer {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.custom-footer > .container {
+  position: relative;
+  z-index: 2; /* Place content above overlay */
+}
+
+.custom-footer h2 {
+  color: #fff;
+}
+
+.custom-footer h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* ─── Footer Links ─────────────────────────────────────────────────────── */
+.custom-footer .offers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-footer .offers-list li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.custom-footer .offers-list li a {
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.3s, padding-left 0.3s;
+}
+
+.custom-footer .offers-list li a:hover {
+  color: #f3f001;
+  padding-left: 5px;
+}
+
+/* ─── Contact Section ──────────────────────────────────────────────────── */
+.phone-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.phone-icon {
+  color: #f3f001;
+  font-size: 1.2rem;
+  margin-top: 4px;
+}
+
+.phone-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.phone-list a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.phone-list a:hover {
+  color: #f3f001;
+}
+
+/* ─── Get In Touch CTA ────────────────────────────────────────────────── */
+.getstart {
+  display: inline-block;
+  background: #f3f001;
+  color: #015927;
+  padding: 10px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(243, 240, 1, 0.3);
+}
+
+.getstart:hover {
+  background: #fff;
+  color: #015927;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(243, 240, 1, 0.4);
+}
+
+/* ─── Branch Centers Carousel ──────────────────────────────────────────── */
+.branches-line {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+}
+
+.branch-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f3f001;
+  letter-spacing: 1px;
+}
+
+/* ─── Bottom Bar ───────────────────────────────────────────────────────── */
+.footer-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #f3f001;
+}
+
+.footer-icons {
+  gap: 8px;
+}
+
+.footer-icon {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-icon:hover {
+  background: #f3f001;
+  color: #015927;
+  border-color: #f3f001;
+  transform: translateY(-3px);
+}
+
+.footer-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ─── Responsive ───────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .custom-footer {
+    text-align: center;
+  }
+
+  .branches-line {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer-icons {
+    justify-content: center !important;
+    margin-top: 15px;
+  }
+
+  .phone-box {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,134 @@
+.testimonials {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.response1 h2 {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.response1 p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.testimonial-text {
+  text-align: justify;
+  padding-right: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* ✅ Responsive styles */
+@media (max-width: 768px) {
+  .testimonials .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonials .col-md-4 {
+    margin-bottom: 15px;
+  }
+
+  /* .testimonials img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+  } */
+
+  .response1 {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .response1 h2 {
+    font-size: 22px;
+  }
+
+  .response1 p {
+    font-size: 14px;
+  }
+
+  .testimonial-text {
+    text-align: center;
+    padding-right: 0;
+  }
+}
+
+
+.student-img {
+  border-radius: 10px;
+  z-index: 3;
+  position: relative;
+}
+
+.response1 {
+  background: rgb(2 109 59 / 85%);
+  border: 1px solid #2d8704;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  margin-left: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials .carousel-item {
+  position: relative;
+}
+
+.testimonials .carousel-item .col-md-4 img,
+.testimonials .carousel-item img.img-fluid,
+.testimonials .carousel-item .student-img {
+  position: relative !important;
+  z-index: 9999 !important;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  transform: translateX(30px);
+}
+
+.testimonials .carousel-item .response1,
+.testimonials .carousel-item .card.response1 {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials {
+  overflow: visible;
+}
+
+
+
+@media screen and (min-width: 350px) and (max-width: 768px) {
+
+  .testimonials .carousel-item .col-md-4 img,
+  .testimonials .carousel-item img.img-fluid,
+  .testimonials .carousel-item .student-img {
+    top: 30px;
+  }
+}
+
+.testimonials .carousel-item img {
+  width: 80%;
+  /* height: 320px; */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .testimonials .carousel-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}

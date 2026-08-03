@@ -1,0 +1,149 @@
+.blogpost-page {
+  background-color: #fafafa;
+}
+
+/* Base body copy: force left alignment and readable width regardless of
+   any stray formatting carried over from pasted content, plus consistent
+   spacing/padding throughout. */
+.blogpost-page .blog-body {
+  text-align: left;
+  color: #2b2b2b;
+  max-width: 100%;
+  overflow-x: hidden; /* safety net: nothing can visually escape the column even if a pasted element forces a fixed width */
+  overflow-wrap: break-word;
+}
+
+.blogpost-page .blog-body * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.blogpost-page .blog-body p {
+  line-height: 1.85;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.blogpost-page .blog-body h1,
+.blogpost-page .blog-body h2,
+.blogpost-page .blog-body h3,
+.blogpost-page .blog-body h4,
+.blogpost-page .blog-body h5,
+.blogpost-page .blog-body h6 {
+  text-align: left !important;
+  color: #015927;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 14px;
+  scroll-margin-top: 90px; /* so jump-to-heading links from the table of contents land below the fixed header */
+  overflow-wrap: break-word !important;
+  white-space: normal !important; /* long headings wrap onto multiple lines instead of running off the right edge, even if pasted content set white-space:nowrap inline */
+}
+
+/* Cap runaway heading sizes from pasted content (e.g. from Word/Google
+   Docs, which can carry oversized inline font-size styles) — without
+   this a heading with an inline style can ignore the rules above. */
+.blogpost-page .blog-body h1 { font-size: clamp(1.6rem, 4vw, 2.4rem) !important; }
+.blogpost-page .blog-body h2 { font-size: clamp(1.4rem, 3.2vw, 2rem) !important; }
+.blogpost-page .blog-body h3 { font-size: clamp(1.2rem, 2.6vw, 1.6rem) !important; }
+
+.blogpost-page .blog-body ul,
+.blogpost-page .blog-body ol {
+  margin-bottom: 25px;
+  padding-left: 24px;
+  text-align: left;
+}
+
+.blogpost-page .blog-body li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.blogpost-page .blog-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.blogpost-page .blog-body blockquote {
+  border-left: 4px solid #015927;
+  padding: 12px 20px;
+  margin: 24px 0;
+  background: #f4f8f5;
+  color: #444;
+  font-style: italic;
+}
+
+.blogpost-page .blog-body a {
+  color: #015927;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Only respect explicit centered/right alignment on IMAGES (common for
+   photo captions) — everything else defaults to left regardless of any
+   .ql-align-* class carried over from pasted content. */
+.blogpost-page .blog-body img.ql-align-center,
+.blogpost-page .blog-body .ql-align-center img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Table of contents */
+.blog-toc {
+  background: #f4f8f5;
+  border: 1px solid #d9ebdd;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 32px;
+}
+
+.blog-toc-title {
+  font-weight: 800;
+  color: #015927;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.blog-toc ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.blog-toc li {
+  margin-bottom: 6px;
+}
+
+.blog-toc a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.blog-toc a:hover {
+  color: #015927;
+  text-decoration: underline;
+}
+
+/* Related articles */
+.related-article-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.related-article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}

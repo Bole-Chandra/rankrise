@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* color: #FFF; */
+}
+
+/* Base */
+/* body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--white);
+  color: var(--dark);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+
+}
+
+.custom-navbar {
+  background: #0d661e;
+  padding: 10px 0;
+}
+
+.navbar-logo {
+  height: 45px;
+}
+
+.btn-contact {
+  background-color: #ffff00;
+  color: #23228a;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #fff;
+  color: #23228a;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+.career-card:hover {
+  background: rgba(16, 85, 4, 0.1) !important;
+}
+
+.career-logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.applybtn {
+  background: #ed3237;
+  color: #ffff;
+  padding: 4px 8px;
+
+}
+
+.doticon {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: #198754;
+}
+
+
+/* Mobile alignment */
+@media (max-width: 991px) {
+  .btn-contact {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  section {
+    padding: 10px 0px !important;
+  }
+
+  .right-area {
+    margin-top: 15px;
+  }
+}
+
+section {
+  padding: 35px 0px;
+  background: #0d661e;
+}
+
+/* Animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-color {
+  color: #ffff00;
+}
+
+
+.rankrise-card {
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+}
+
+.left-area {
+  background: #ffffff;
+}
+
+.right-area {
+  background: #cfdbe2;
+}

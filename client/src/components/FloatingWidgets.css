@@ -1,0 +1,94 @@
+/* Scoped Floating Widgets Styling */
+.floating-widget-container .floating-widget {
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.floating-widget-container .float-btn {
+  width: 45px;
+  height: 45px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.floating-widget-container .call {
+  background: #ff3b30;
+}
+
+.floating-widget-container .slide-btn {
+  animation: iconSlide 2s infinite;
+}
+
+@keyframes iconSlide {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.floating-widget-container .ask-box {
+  display: flex;
+  align-items: center;
+  background: #0c9d48;
+  color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 0 8px #0c9d4880;
+  flex-direction: row-reverse;
+  width: 55px;
+  padding: 6px;
+  transition: width 0.2s ease, padding 0.2s ease;
+}
+
+.floating-widget-container .ask-box.expand {
+  width: 170px;
+  padding: 8px 10px 8px 10px;
+}
+
+.floating-widget-container .ask-icon {
+  min-width: 45px;
+  min-height: 45px;
+  background: #FFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.floating-widget-container .ask-text {
+  margin-left: 10px;
+  white-space: nowrap;
+  font-size: 15px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.floating-widget-container .ask-box:not(.expand) .ask-text {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

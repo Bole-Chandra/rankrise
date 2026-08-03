@@ -1,0 +1,98 @@
+/* ─── Gallery Page Styles ─────────────────────────────────────────────── */
+
+/* Filter Buttons */
+.gallery-page .active-filter {
+  background: #015927;
+  color: #fff;
+  border: 2px solid #015927;
+}
+
+.gallery-page .inactive-filter {
+  background: transparent;
+  color: #015927;
+  border: 2px solid #015927;
+  transition: all 0.3s ease;
+}
+
+.gallery-page .inactive-filter:hover {
+  background: #015927;
+  color: #fff;
+}
+
+/* Gallery Card */
+.gallery-card-item img {
+  transition: transform 0.5s ease;
+}
+
+.gallery-card-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 89, 39, 0.7);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-card-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* Lightbox */
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 99999;
+  cursor: pointer;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  cursor: default;
+}
+
+.lightbox-content img {
+  max-width: 90vw;
+  max-height: 75vh;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f3f001;
+  color: #015927;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.lightbox-close:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .gallery-card-item {
+    height: 180px !important;
+  }
+  
+  .gallery-hero h1 {
+    font-size: 1.8rem;
+  }
+}
