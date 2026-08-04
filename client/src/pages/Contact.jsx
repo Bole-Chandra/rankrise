@@ -37,12 +37,12 @@ const Contact = () => {
   <section>
     <div className="hero-section position-relative d-none d-md-block">
       <div>
-        <img src="/assets/public/Contact Page.JPG" alt="Snow" style={{width: '100%', borderBottom: '2px solid #005826'}} loading="eager" />
+        <img src="/assets/public/Contact Page.webp" alt="Snow" style={{width: '100%', borderBottom: '2px solid #005826'}} loading="eager" />
       </div>
     </div>
     <div className="hero-section-mobile d-md-none">
       <div>
-        <img src="/assets/public/Mobile-Contact.JPG" alt="Mobile Banner" style={{width: '100%', borderBottom: '2px solid #005826'}} loading="eager" />
+        <img src="/assets/public/Mobile-Contact.webp" alt="Mobile Banner" style={{width: '100%', borderBottom: '2px solid #005826'}} loading="lazy" />
       </div>
     </div>
   </section>
@@ -68,7 +68,7 @@ const Contact = () => {
       <div className="row align-items-center">
         <div className="col-lg-7 col-md-7">
           <div>
-            <img src="/assets/public/Contact Page New Banner.JPG" alt className="w-100" loading="eager" />
+            <img src="/assets/public/Contact Page New Banner.webp" alt="Contact Rankrise Educational Institutions" className="w-100" loading="lazy" />
           </div>
         </div>
         <div className="col-md-5">
@@ -84,7 +84,7 @@ const Contact = () => {
           </div>
           <div id="successPopup" className="popup-box">
             <div className="popup-content">
-              <img src="/assets/public/successicon.png" alt style={{width: 80}} loading="eager" />
+              <img src="/assets/public/successicon.webp" alt="" style={{width: 80}} loading="lazy" />
               <h4>Submitted Successfully!</h4>
               <p> Thank you! Your details have been shared successfully.<br />
                 Our team will contact you soon.</p>

@@ -317,7 +317,7 @@ const AdminBlogs = () => {
                     {blog.image && (
                       <img 
                         src={getImageSrc(blog.image)} 
-                        alt={blog.title} 
+                        alt={blog.title || 'Blog post cover image'} 
                         className="card-img-top"
                         style={{ height: '180px', objectFit: 'cover' }}
                       />

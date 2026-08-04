@@ -126,7 +126,7 @@ const UserDashboard = () => {
                         <td>
                           <img
                             src={getImageSrc(blog.image)}
-                            alt={blog.title}
+                            alt={blog.title || 'Blog post cover image'}
                             style={{ width: '50px', height: '50px', objectFit: 'cover', borderRadius: '8px' }}
                           />
                         </td>

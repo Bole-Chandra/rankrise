@@ -51,7 +51,7 @@ const TopNEET = () => {
           </p>
         </div>
         <div className="col-md-4">
-          <img src="/assets/public/Institute.png" alt className="w-100" />
+          <img src="/assets/public/Institute.webp" alt="Rankrise Institute" className="w-100" />
         </div>
       </div>
     </div>
@@ -215,7 +215,7 @@ const TopNEET = () => {
               </div>
               <div className="col-md-4">
                 <div className="right-area p-4 h-100">
-                  <img src="/assets/public/EAMCET.JPG" alt className="w-100" />
+                  <img src="/assets/public/EAMCET.webp" alt="Top NEET coaching at Rankrise" className="w-100" />
                   <div className="text-center">
                     <div style={{background: '#ffc107'}} className="p-2">
                       <h4 className="fw-bold mb-1 admission-title" style={{fontSize: 18}}>

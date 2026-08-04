@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="row text-md-start text-center">
           <div className="col-md-3 col-12 col-sm-12">
             <div>
-              <img src="/assets/public/Rankriselogo.JPG" alt="Rankrise Logo" className="w-100" style={{ borderRadius: '15px' }} loading="eager" />
+              <img src="/assets/public/Rankriselogo.webp" alt="Rankrise Logo" className="w-100" style={{ borderRadius: '15px' }} loading="eager" />
             </div>
             <p className="mt-4">
               <strong>RANKRISE</strong> is a reputed institute in Hyderabad Since 2011 offering INTERMEDIATE with IIT-JEE,
@@ -131,13 +131,13 @@ const Footer = () => {
           </div>
           <div className="col-md-6">
             <div className="footer-icons d-flex justify-content-end align-items-center">
-              <a href="https://www.instagram.com/rankriseinstitute" target="_blank" rel="noopener noreferrer" className="footer-icon"><i className="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/rankriseinstitute" target="_blank" rel="noopener noreferrer" aria-label="Rankrise on Instagram" className="footer-icon"><i className="fab fa-instagram"></i></a>
               <span className="footer-divider"></span>
-              <a href="https://www.facebook.com/share/1EyG1jMR4C/" target="_blank" rel="noopener noreferrer" className="footer-icon"><i className="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/share/1EyG1jMR4C/" target="_blank" rel="noopener noreferrer" aria-label="Rankrise on Facebook" className="footer-icon"><i className="fab fa-facebook-f"></i></a>
               <span className="footer-divider"></span>
-              <a href="https://x.com/RiseRise291827" target="_blank" rel="noopener noreferrer" className="footer-icon"><i className="fab fa-twitter"></i></a>
+              <a href="https://x.com/RiseRise291827" target="_blank" rel="noopener noreferrer" aria-label="Rankrise on Twitter" className="footer-icon"><i className="fab fa-twitter"></i></a>
               <span className="footer-divider"></span>
-              <a href="https://youtube.com/@rankriseinstitute" target="_blank" rel="noopener noreferrer" onClick={() => trackYouTubeClick('footer')} className="footer-icon"><i className="fab fa-youtube"></i></a>
+              <a href="https://youtube.com/@rankriseinstitute" target="_blank" rel="noopener noreferrer" aria-label="Rankrise on YouTube" onClick={() => trackYouTubeClick('footer')} className="footer-icon"><i className="fab fa-youtube"></i></a>
             </div>
           </div>
         </div>

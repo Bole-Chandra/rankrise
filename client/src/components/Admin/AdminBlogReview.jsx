@@ -77,7 +77,7 @@ const AdminBlogReview = () => {
                 <div className="d-flex gap-3">
                   <img
                     src={getImageSrc(blog.image)}
-                    alt={blog.title}
+                    alt={blog.title || 'Blog post cover image'}
                     style={{ width: '70px', height: '70px', objectFit: 'cover', borderRadius: '8px', flexShrink: 0 }}
                   />
                   <div>
@@ -131,7 +131,7 @@ const AdminBlogReview = () => {
               <button className="btn-close" onClick={() => setPreviewBlog(null)}></button>
             </div>
             {previewBlog.image && (
-              <img src={getImageSrc(previewBlog.image)} alt={previewBlog.title} className="img-fluid rounded-3 mb-3" />
+              <img src={getImageSrc(previewBlog.image)} alt={previewBlog.title || 'Blog post cover image'} className="img-fluid rounded-3 mb-3" />
             )}
             <div dangerouslySetInnerHTML={{ __html: previewBlog.content }} />
           </div>

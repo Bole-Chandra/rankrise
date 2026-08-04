@@ -103,7 +103,7 @@ const Blogs = () => {
                 <div className="col-md-3 col-sm-6" key={blog._id}>
                   <div className="blog-card h-100">
                     <div className="blog-img">
-                      <img src={getImageSrc(blog.image)} alt={blog.title} className="w-100" />
+                      <img src={getImageSrc(blog.image)} alt={blog.title || 'Blog post cover image'} className="w-100" />
                     </div>
                     <div className="blog-content">
                       <small className="text-muted">

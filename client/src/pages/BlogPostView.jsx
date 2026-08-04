@@ -34,7 +34,7 @@ const BlogPostView = () => {
       `,
       summary: 'Discover why Rankrise is the premier choice for IIT-JEE preparation in Hyderabad with expert faculty and proven results.',
       author: 'Ethan Brooks',
-      image: '/assets/public/hero-slider1.JPG',
+      image: '/assets/public/hero-slider1.webp',
       createdAt: 'February 22, 2024'
     },
     'top-neet-coaching-institute-in-hyderabad': {
@@ -51,7 +51,7 @@ const BlogPostView = () => {
       `,
       summary: 'Everything you need to know about preparing for the NEET medical entrance exam with Rankrise.',
       author: 'Dr. Sarah James',
-      image: '/assets/public/hero-slider3.JPG',
+      image: '/assets/public/hero-slider3.webp',
       createdAt: 'March 27, 2024'
     }
   };
@@ -152,7 +152,7 @@ const BlogPostView = () => {
             publisher: {
               '@type': 'Organization',
               name: 'Rankrise Educational Institutions',
-              logo: { '@type': 'ImageObject', url: 'https://rankrise.in/assets/public/Rankriselogo.JPG' },
+              logo: { '@type': 'ImageObject', url: 'https://rankrise.in/assets/public/Rankriselogo.webp' },
             },
             datePublished: blog.createdAt,
             dateModified: blog.updatedAt || blog.createdAt,
@@ -180,7 +180,7 @@ const BlogPostView = () => {
               {blog.image && (
                 <img 
                   src={getImageSrc(blog.image)} 
-                  alt={blog.title} 
+                  alt={blog.title || 'Blog post cover image'} 
                   className="img-fluid rounded shadow mb-4 w-100" 
                   style={{ maxHeight: '450px', objectFit: 'cover' }} 
                 />
@@ -226,9 +226,9 @@ const BlogPostView = () => {
                         <Link to={`/blog/${r.slug}`} className="related-article-card">
                           <img
                             src={getImageSrc(r.image)}
-                            alt={r.title}
+                            alt={r.title || 'Related blog post cover image'}
                             style={{ width: '100%', height: '130px', objectFit: 'cover' }}
-                            onError={(e) => { e.target.src = '/assets/public/Rankriselogo.JPG'; }}
+                            onError={(e) => { e.target.src = '/assets/public/Rankriselogo.webp'; }}
                           />
                           <div className="p-3">
                             <h6 className="fw-bold mb-0" style={{ fontSize: '0.9rem' }}>{r.title}</h6>

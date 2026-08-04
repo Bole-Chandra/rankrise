@@ -32,7 +32,7 @@ const ForgotPassword = () => {
 
       <div className="card shadow border-0 p-4" style={{ borderRadius: '15px' }}>
         <div className="text-center mb-4">
-          <img src="/assets/public/Rankriselogo.JPG" alt="Rankrise" height="50" className="mb-3" />
+          <img src="/assets/public/Rankriselogo.webp" alt="Rankrise" height="50" className="mb-3" />
           <h3 className="fw-bold" style={{ color: '#015927' }}>Forgot Password</h3>
           <p className="text-muted small">Enter your email and we'll send you a reset code.</p>
         </div>

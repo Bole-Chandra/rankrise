@@ -282,7 +282,7 @@ const AdminVideoGallery = () => {
                           onClick={() => setPreviewVideo(video)}>
                           {video.type === 'youtube' && thumbSrc ? (
                             <>
-                              <img src={thumbSrc} alt={video.title} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85 }} />
+                              <img src={thumbSrc} alt={video.title || 'Video thumbnail'} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.85 }} />
                               <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                 <i className="fa-brands fa-youtube" style={{ fontSize: '2.8rem', color: '#ff0000', filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.5))' }}></i>
                               </div>

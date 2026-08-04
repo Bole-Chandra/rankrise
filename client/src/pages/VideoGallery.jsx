@@ -116,7 +116,7 @@ const VideoGallery = () => {
                     onClick={() => setActiveVideo(video)}
                   >
                     {thumbSrc ? (
-                      <img src={thumbSrc} alt={video.title} className="w-100 h-100" style={{ objectFit: 'cover' }} loading="lazy" />
+                      <img src={thumbSrc} alt={video.title || 'Video thumbnail'} className="w-100 h-100" style={{ objectFit: 'cover' }} loading="lazy" />
                     ) : (
                       <video src={getImageSrc(video.videoUrl)} className="w-100 h-100" style={{ objectFit: 'cover' }} muted preload="metadata" />
                     )}

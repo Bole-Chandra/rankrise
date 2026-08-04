@@ -1,6 +1,7 @@
 const Blog = require('../models/Blog');
 const fs = require('fs');
 const path = require('path');
+const sanitizeBlogContent = require('../utils/sanitizeBlogContent');
 
 // @desc    Get all PUBLIC (approved) blogs
 // @route   GET /api/blogs
@@ -61,7 +62,7 @@ const createBlog = async (req, res, next) => {
     const blog = await Blog.create({
       title,
       slug,
-      content,
+      content: sanitizeBlogContent(content),
       summary,
       author,
       image,
@@ -100,7 +101,7 @@ const updateBlog = async (req, res, next) => {
 
     blog.title = title || blog.title;
     blog.slug = slug || blog.slug;
-    blog.content = content || blog.content;
+    blog.content = content ? sanitizeBlogContent(content) : blog.content;
     blog.summary = summary !== undefined ? summary : blog.summary;
     blog.author = author || blog.author;
     blog.image = image || blog.image;
@@ -166,7 +167,7 @@ const submitBlog = async (req, res, next) => {
     const blog = await Blog.create({
       title,
       slug,
-      content,
+      content: sanitizeBlogContent(content),
       summary,
       tags,
       image,

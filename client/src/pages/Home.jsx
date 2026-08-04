@@ -147,37 +147,37 @@ const Home = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <picture>
-                <source media="(max-width: 576px)" srcSet="/assets/public/home-mobile-1.jpg" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
-                <source media="(max-width: 992px)" srcSet="/assets/public/home-mobile-1.jpg" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
-                <img className="d-block w-100" draggable="false" src="/assets/public/banner2.JPG" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" loading="eager" />
+                <source media="(max-width: 576px)" srcSet="/assets/public/home-mobile-1.webp" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
+                <source media="(max-width: 992px)" srcSet="/assets/public/home-mobile-1.webp" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
+                <img className="d-block w-100" draggable="false" src="/assets/public/banner2.webp" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" loading="eager" fetchpriority="high" />
               </picture>
             </div>
             <div className="carousel-item">
               <picture>
-                <source media="(max-width: 576px)" srcSet="/assets/public/JEE-Result-Banner-responsive.JPG" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
-                <source media="(max-width: 992px)" srcSet="/assets/public/JEE-Result-Banner-responsive.JPG" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
-                <img className="d-block w-100" src="/assets/public/banner3.JPG" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" loading="eager" draggable="false" />
+                <source media="(max-width: 576px)" srcSet="/assets/public/JEE-Result-Banner-responsive.webp" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
+                <source media="(max-width: 992px)" srcSet="/assets/public/JEE-Result-Banner-responsive.webp" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
+                <img className="d-block w-100" src="/assets/public/banner3.webp" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" loading="lazy" draggable="false" />
               </picture>
             </div>
             <div className="carousel-item">
               <picture>
-                <source media="(max-width: 576px)" srcSet="/assets/public/home-mobile-2.JPG" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
-                <source media="(max-width: 992px)" srcSet="/assets/public/home-mobile-2.JPG" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
-                <img className="d-block w-100" src="/assets/public/banner1.JPG" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" loading="eager" draggable="false" />
+                <source media="(max-width: 576px)" srcSet="/assets/public/home-mobile-2.webp" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
+                <source media="(max-width: 992px)" srcSet="/assets/public/home-mobile-2.webp" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
+                <img className="d-block w-100" src="/assets/public/banner1.webp" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" loading="lazy" draggable="false" />
               </picture>
             </div>
             <div className="carousel-item">
               <picture>
-                <source media="(max-width: 576px)" srcSet="/assets/public/NEET-Result-Banner-responsive.JPG" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
-                <source media="(max-width: 992px)" srcSet="/assets/public/NEET-Result-Banner-responsive.JPG" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
-                <img className="d-block w-100" src="/assets/public/banner4.JPG" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" loading="eager" draggable="false" />
+                <source media="(max-width: 576px)" srcSet="/assets/public/NEET-Result-Banner-responsive.webp" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
+                <source media="(max-width: 992px)" srcSet="/assets/public/NEET-Result-Banner-responsive.webp" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
+                <img className="d-block w-100" src="/assets/public/banner4.webp" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" loading="lazy" draggable="false" />
               </picture>
             </div>
             <div className="carousel-item">
               <picture>
-                <source media="(max-width: 576px)" srcSet="/assets/public/Eamcet-result-banner.JPG" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
-                <source media="(max-width: 992px)" srcSet="/assets/public/Eamcet-result-banner.JPG" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
-                <img className="d-block w-100" src="/assets/public/banner5.JPG" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" loading="eager" draggable="false" />
+                <source media="(max-width: 576px)" srcSet="/assets/public/Eamcet-result-banner.webp" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
+                <source media="(max-width: 992px)" srcSet="/assets/public/Eamcet-result-banner.webp" draggable="false" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" />
+                <img className="d-block w-100" src="/assets/public/banner5.webp" alt="Best IIT JEE Mains & NEET Coaching Institute in Hyderabad" loading="lazy" draggable="false" />
               </picture>
             </div>
           </div>
@@ -214,12 +214,12 @@ const Home = () => {
                 <div className="row">
                   <div className="col-md-6 col-lg-6">
                     <div className="card rankcards">
-                      <img src="/assets/public/IIT-JEE.jpg" className="card-img-top" alt loading="eager" />
+                      <img src="/assets/public/IIT-JEE.webp" className="card-img-top" alt="IIT-JEE coaching at Rankrise" loading="lazy" />
                     </div>
                   </div>
                   <div className="col-md-6 col-lg-6">
                     <div className="card rankcards">
-                      <img src="/assets/public/EAMCETBANNER.JPG" className="card-img-top" alt loading="eager" />
+                      <img src="/assets/public/EAMCETBANNER.webp" className="card-img-top" alt="EAMCET coaching at Rankrise" loading="lazy" />
                     </div>
                   </div>
                 </div>
@@ -228,12 +228,12 @@ const Home = () => {
                 <div className="row">
                   <div className="col-md-6 mb-2 col-lg-6">
                     <div className="card rankcards">
-                      <img src="/assets/public/NEET.jpg" className="card-img-top" alt loading="eager" />
+                      <img src="/assets/public/NEET.webp" className="card-img-top" alt="NEET coaching at Rankrise" loading="lazy" />
                     </div>
                   </div>
                   <div className="col-md-6 mb-2 col-lg-6">
                     <div className="card rankcards">
-                      <img src="/assets/public/JEE MAINS&BITSAT BANNER.JPG" className="card-img-top" alt loading="eager" />
+                      <img src="/assets/public/JEE MAINS&BITSAT BANNER.webp" className="card-img-top" alt="JEE Mains and BITSAT coaching at Rankrise" loading="lazy" />
                     </div>
                   </div>
                 </div>
@@ -247,9 +247,9 @@ const Home = () => {
               style={{ backgroundColor: "#A5D6A7" }}
               className="p-2 rounded-3"
             >
-              <h4 className="fw-bold mb-1 admission-title text-dark">
+              <p className="fw-bold mb-1 admission-title text-dark" style={{ fontSize: '1.5rem', lineHeight: 1.2 }}>
                 ADMISSIONS OPEN for 2026–2027
-              </h4>
+              </p>
             </div>
             <p style={{ fontSize: 20 }} className="mb-1  d-inline-flex ">
               Enquire Now or call:
@@ -260,7 +260,7 @@ const Home = () => {
           </div>
           <div className="sidebar shadow enquiry-box ">
             <div className="text-center">
-              <h3 className="fw-bold formsubheading  d-inline-flex" style={{ fontSize: 24 }}>Your Success, Our Mission</h3>
+              <p className="fw-bold formsubheading  d-inline-flex" style={{ fontSize: 24 }}>Your Success, Our Mission</p>
             </div>
             <EnquiryForm
               idPrefix="mobile_"
@@ -270,8 +270,8 @@ const Home = () => {
           </div>
           <div id="successPopup" className="popup-box">
             <div className="popup-content">
-              <img src="/assets/public/successicon.png" alt style={{ width: 80 }} loading="eager" />
-              <h4>Submitted Successfully!</h4>
+              <img src="/assets/public/successicon.webp" alt="" style={{ width: 80 }} loading="lazy" />
+              <p style={{ fontSize: '1.5rem', fontWeight: 500, marginBottom: '0.5rem', lineHeight: 1.2 }}>Submitted Successfully!</p>
               <p>
                 Thank you! Your details have been shared successfully.<br />
                 Our team will contact you soon.
@@ -326,48 +326,48 @@ const Home = () => {
                 </button>
               </div>
               <div className="col-md-4 col-lg-4 col-xl-5 order-md-2 order-1">
-                <img src="/assets/public/About-Banner.jpg" alt className="w-100" loading="eager" />
+                <img src="/assets/public/About-Banner.webp" alt="About Rankrise Educational Institutions" className="w-100" loading="lazy" />
               </div>
             </div>
           </div>
         </section>
         <section id="call-to-action" className="call-to-action section dark-background">
-          <img src="/assets/public/mainlogobg.JPG" alt="" loading="eager" />
+          <img src="/assets/public/mainlogobg.webp" alt="" loading="lazy" />
           <div className="container">
             <div className="row aos-init aos-animate" data-aos="zoom-in" data-aos-delay={100}>
               <div className="text-center text-xl-start w-100">
                 <div className="section-title text-center">
                   <h2 className="mt-5 text-white">Rankrise Trained Students</h2>
                 </div>
-                <h4 className="text-center text-white">Hyderabad's Premier Coaching Institute</h4>
+                <h3 className="text-center text-white" style={{ fontSize: '1.5rem', fontWeight: 500 }}>Hyderabad's Premier Coaching Institute</h3>
                 <div className="trained-students-section my-4" ref={statsRef}>
                   <div className="container text-center">
                     <div className="row justify-content-center mt-4">
 
                       <div className="col-lg-3 col-md-3 col-sm-12 stat-card">
                         <div className={`stat-box${statsVisible ? ' visible' : ''}`}>
-                          <h5>IIT-JEE</h5>
+                          <h4>IIT-JEE</h4>
                           <h3 className="count">{counts.iit.toLocaleString('en-IN')}</h3><span>+</span>
                         </div>
                       </div>
 
                       <div className="col-lg-3 col-md-3 col-sm-12 stat-card">
                         <div className={`stat-box${statsVisible ? ' visible' : ''}`}>
-                          <h5>NEET</h5>
+                          <h4>NEET</h4>
                           <h3 className="count">{counts.neet.toLocaleString('en-IN')}</h3><span>+</span>
                         </div>
                       </div>
 
                       <div className="col-lg-3 col-md-3 col-sm-12 stat-card">
                         <div className={`stat-box${statsVisible ? ' visible' : ''}`}>
-                          <h5>EAMCET</h5>
+                          <h4>EAMCET</h4>
                           <h3 className="count">{counts.eamcet.toLocaleString('en-IN')}</h3><span>+</span>
                         </div>
                       </div>
 
                       <div className="col-lg-3 col-md-3 col-sm-12 stat-card">
                         <div className={`stat-box${statsVisible ? ' visible' : ''}`}>
-                          <h5>BITSAT</h5>
+                          <h4>BITSAT</h4>
                           <h3 className="count">{counts.bitsat.toLocaleString('en-IN')}</h3><span>+</span>
                         </div>
                       </div>
@@ -490,7 +490,7 @@ const Home = () => {
             </div>
             <div className="row my-3 align-items-center">
               <div className="col-md-6 col-lg-5" data-aos="fade-right">
-                <img src="/assets/public/whychooseus.jpg" alt className="w-100" loading="eager" />
+                <img src="/assets/public/whychooseus.webp" alt="Why choose Rankrise" className="w-100" loading="lazy" />
               </div>
               <div className="col-md-6 col-lg-7" data-aos="fade-left">
                 <h6 className="fw-bolder subHcolor">Best NEET, IIT-JEE, BITSAT, and EAMCET Coaching Institute in HYDERABAD.</h6>
@@ -533,20 +533,20 @@ const Home = () => {
             </div>
             <div className="image-slider">
               <div className="slider-track">
-                <img src="/assets/public/sliderimg1.jpg" alt="Student 1" loading="eager" />
-                <img src="/assets/public/sliderimg2.jpg" alt="Student 2" loading="eager" />
-                <img src="/assets/public/sliderimg3.jpg" alt="Student 3" loading="eager" />
-                <img src="/assets/public/sliderimg5.jpg" alt="Student 5" loading="eager" />
-                <img src="/assets/public/sliderimg6.jpg" alt="Student 6" loading="eager" />
-                <img src="/assets/public/sliderimg7.jpg" alt="Student 7" loading="eager" />
-                <img src="/assets/public/sliderimg8.jpg" alt="Student 8" loading="eager" />
-                <img src="/assets/public/sliderimg1.jpg" alt="Student 1" loading="eager" />
-                <img src="/assets/public/sliderimg2.jpg" alt="Student 2" loading="eager" />
-                <img src="/assets/public/sliderimg3.jpg" alt="Student 3" loading="eager" />
-                <img src="/assets/public/sliderimg4.jpg" alt="Student 4" loading="eager" />
-                <img src="/assets/public/sliderimg5.jpg" alt="Student 5" loading="eager" />
-                <img src="/assets/public/sliderimg6.jpg" alt="Student 6" loading="eager" />
-                <img src="/assets/public/sliderimg7.jpg" alt="Student 7" loading="eager" />
+                <img src="/assets/public/sliderimg1.webp" alt="Student 1" loading="lazy" />
+                <img src="/assets/public/sliderimg2.webp" alt="Student 2" loading="lazy" />
+                <img src="/assets/public/sliderimg3.webp" alt="Student 3" loading="lazy" />
+                <img src="/assets/public/sliderimg5.webp" alt="Student 5" loading="lazy" />
+                <img src="/assets/public/sliderimg6.webp" alt="Student 6" loading="lazy" />
+                <img src="/assets/public/sliderimg7.webp" alt="Student 7" loading="lazy" />
+                <img src="/assets/public/sliderimg8.webp" alt="Student 8" loading="lazy" />
+                <img src="/assets/public/sliderimg1.webp" alt="Student 1" loading="lazy" />
+                <img src="/assets/public/sliderimg2.webp" alt="Student 2" loading="lazy" />
+                <img src="/assets/public/sliderimg3.webp" alt="Student 3" loading="lazy" />
+                <img src="/assets/public/sliderimg4.webp" alt="Student 4" loading="lazy" />
+                <img src="/assets/public/sliderimg5.webp" alt="Student 5" loading="lazy" />
+                <img src="/assets/public/sliderimg6.webp" alt="Student 6" loading="lazy" />
+                <img src="/assets/public/sliderimg7.webp" alt="Student 7" loading="lazy" />
               </div>
             </div>
           </div>
@@ -987,7 +987,7 @@ const Home = () => {
                   </div>
 
                   <div className="text-center mt-4 pt-3 border-top">
-                    <img src="/assets/public/Rankriseurl-logo.jpeg" alt="Rankrise" style={{ height: '35px', objectFit: 'contain' }} />
+                    <img src="/assets/public/Rankriseurl-logo.webp" alt="Rankrise" style={{ height: '35px', objectFit: 'contain' }} />
                   </div>
 
                 </div>
@@ -1009,7 +1009,7 @@ const Home = () => {
                 <div className="carousel-item active">
                   <div className="row justify-content-center align-items-center g-0">
                     <div className="col-md-4 col-lg-3 text-center">
-                      <img src="/assets/public/Neet42.JPG" className="img-fluid rounded shadow" loading="eager" />
+                      <img src="/assets/public/Neet42.webp" alt="Rankrise NEET result" className="img-fluid rounded shadow" loading="lazy" />
                     </div>
                     <div className="col-md-8 col-lg-7">
                       <div className="card response1">
@@ -1033,7 +1033,7 @@ const Home = () => {
                 <div className="carousel-item">
                   <div className="row justify-content-center align-items-center g-0">
                     <div className="col-md-4 col-lg-3 text-center">
-                      <img src="/assets/public/Neet58.jpeg" className="img-fluid rounded shadow" loading="eager" />
+                      <img src="/assets/public/Neet58.webp" alt="Rankrise NEET result" className="img-fluid rounded shadow" loading="lazy" />
                     </div>
                     <div className="col-md-8 col-lg-7">
                       <div className="card response1">
@@ -1058,7 +1058,7 @@ const Home = () => {
                 <div className="carousel-item">
                   <div className="row justify-content-center align-items-center g-0">
                     <div className="col-md-4 col-lg-3 text-center">
-                      <img src="/assets/public/Neet76.JPG" className="img-fluid rounded shadow" loading="eager" />
+                      <img src="/assets/public/Neet76.webp" alt="Rankrise NEET result" className="img-fluid rounded shadow" loading="lazy" />
                     </div>
                     <div className="col-md-8 col-lg-7">
                       <div className="card response1">
@@ -1080,7 +1080,7 @@ const Home = () => {
                 <div className="carousel-item">
                   <div className="row justify-content-center align-items-center g-0">
                     <div className="col-md-4 col-lg-3 text-center">
-                      <img src="/assets/public/IIT-JEE-53.JPG" className="img-fluid rounded shadow" loading="eager" />
+                      <img src="/assets/public/IIT-JEE-53.webp" alt="Rankrise IIT-JEE result" className="img-fluid rounded shadow" loading="lazy" />
                     </div>
                     <div className="col-md-8 col-lg-7">
                       <div className="card response1">
@@ -1104,7 +1104,7 @@ const Home = () => {
                 <div className="carousel-item">
                   <div className="row justify-content-center align-items-center g-0">
                     <div className="col-md-4 col-lg-3 text-center">
-                      <img src="/assets/public/IIT-JEE-69.JPG" className="img-fluid rounded shadow" loading="eager" />
+                      <img src="/assets/public/IIT-JEE-69.webp" alt="Rankrise IIT-JEE result" className="img-fluid rounded shadow" loading="lazy" />
                     </div>
                     <div className="col-md-8 col-lg-7">
                       <div className="card response1">
@@ -1127,7 +1127,7 @@ const Home = () => {
                 <div className="carousel-item">
                   <div className="row justify-content-center align-items-center g-0">
                     <div className="col-md-4 col-lg-3 text-center">
-                      <img src="/assets/public/IIT-JEE-85.JPG" className="img-fluid rounded shadow" loading="eager" />
+                      <img src="/assets/public/IIT-JEE-85.webp" alt="Rankrise IIT-JEE result" className="img-fluid rounded shadow" loading="lazy" />
                     </div>
                     <div className="col-md-8 col-lg-7">
                       <div className="card response1">
@@ -1151,20 +1151,22 @@ const Home = () => {
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true" />
+                <span className="visually-hidden">Previous</span>
               </button>
               <button className="carousel-control-next ps-md-5 ps-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true" />
+                <span className="visually-hidden">Next</span>
               </button>
             </div>
           </div>
         </section>
-        <div className="modal fade p-2" id="earlyBirdModal" tabIndex={-1}>
+        <div className="modal fade p-2" id="earlyBirdModal" tabIndex={-1} aria-label="Early Bird Admission Offer">
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content border-0 bg-transparent position-relative">
               <button type="button" className="btn-close btn-close-white position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close" />
-              <img src="/assets/public/EarlyBird-banner.jpg" className="img-fluid d-none d-md-block rounded shadow-lg" alt="Web View Image" loading="eager" />
+              <img src="/assets/public/EarlyBird-banner.webp" className="img-fluid d-none d-md-block rounded shadow-lg" alt="Web View Image" loading="lazy" />
               <div className="d-block d-md-none shadow-lg">
-                <img src="/assets/public/Early-Bird-Banner-mobile.JPG" className="img-fluid " alt="Mobile View Image" loading="eager" />
+                <img src="/assets/public/Early-Bird-Banner-mobile.webp" className="img-fluid " alt="Mobile View Image" loading="lazy" />
                 <div className="sidebar text-white shadow" style={{ background: '#e9f6fe', padding: 10 }}>
                   <div className="p-3 rounded" style={{ background: '#e2ffee' }}>
                     <div className="text-center">

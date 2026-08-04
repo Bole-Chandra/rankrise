@@ -59,12 +59,12 @@ const MPC_IIT = () => {
         <section>
           <div className="hero-section position-relative d-none d-md-block">
             <div>
-              <img src="/assets/public/INTERMEDIATE-IITJEE Banner.JPG" alt="Best MPC with IIT Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
+              <img src="/assets/public/INTERMEDIATE-IITJEE Banner.webp" alt="Best MPC with IIT Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
             </div>
           </div>
           <div className="hero-section-mobile d-md-none">
             <div>
-              <img src="/assets/public/juniorslider1.jpg" alt="Best MPC with IIT Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
+              <img src="/assets/public/juniorslider1.webp" alt="Best MPC with IIT Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="lazy" />
             </div>
           </div>
         </section>
@@ -116,7 +116,7 @@ const MPC_IIT = () => {
                 </div>
                 <div>
                   <div className="d-none d-md-block">
-                    <img src="/assets/public/EAMCETBANNER.JPG" alt="EAMCET Banner" className="w-100" loading="eager" />
+                    <img src="/assets/public/EAMCETBANNER.webp" alt="EAMCET Banner" className="w-100" loading="lazy" />
                   </div>
                 </div>
               </div>

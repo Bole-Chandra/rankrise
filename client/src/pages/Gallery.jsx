@@ -114,11 +114,11 @@ const Gallery = () => {
                     >
                       <img
                         src={getImageSrc(img.image)}
-                        alt={img.title}
+                        alt={img.title || 'Gallery photo'}
                         className="w-100 h-100"
                         style={{ objectFit: 'cover', transition: 'transform 0.4s ease' }}
                         loading="lazy"
-                        onError={(e) => { e.target.src = '/assets/public/Rankriselogo.JPG'; }}
+                        onError={(e) => { e.target.src = '/assets/public/Rankriselogo.webp'; }}
                       />
                       <div className="gallery-overlay d-flex flex-column align-items-center justify-content-center text-white p-3">
                         <span className="badge bg-warning text-dark mb-2 px-3 py-1" style={{ fontSize: '11px' }}>{img.category}</span>
@@ -152,7 +152,7 @@ const Gallery = () => {
             <button className="lightbox-close" onClick={() => setLightbox(null)} aria-label="Close">
               <i className="fas fa-times"></i>
             </button>
-            <img src={getImageSrc(lightbox.image)} alt={lightbox.title} className="img-fluid rounded-3" />
+            <img src={getImageSrc(lightbox.image)} alt={lightbox.title || 'Gallery photo'} className="img-fluid rounded-3" />
             <div className="text-center mt-3">
               <h5 className="fw-bold text-white mb-1">{lightbox.title}</h5>
               <span className="badge bg-warning text-dark">{lightbox.category}</span>

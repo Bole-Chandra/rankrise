@@ -12,7 +12,7 @@ const API_ORIGIN = import.meta.env.VITE_API_URL || '';
  * an <img> tag — correctly, regardless of whether the frontend and
  * backend are deployed together or on separate domains.
  */
-export const getImageSrc = (img, fallback = '/assets/public/Rankriselogo.JPG') => {
+export const getImageSrc = (img, fallback = '/assets/public/Rankriselogo.webp') => {
   if (!img) return fallback;
   if (img.startsWith('http') || img.startsWith('data:')) return img;
   if (img.startsWith('/uploads')) return `${API_ORIGIN}${img}`;
