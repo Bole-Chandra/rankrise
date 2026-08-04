@@ -304,7 +304,11 @@ const AdminGallery = () => {
               <h5 style={{ fontWeight: 800, margin: 0 }}>Edit Image Details</h5>
               <button className="btn-close" onClick={() => setEditItem(null)}></button>
             </div>
+<<<<<<< HEAD
             <img src={editImagePreview || getImageSrc(editItem.image)} alt={editItem.title || 'Gallery photo'} style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: '10px', marginBottom: '12px' }}
+=======
+            <img src={editImagePreview || getImageSrc(editItem.image)} alt={editItem.title} style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: '10px', marginBottom: '12px' }}
+>>>>>>> 25d04381861c4974c713aa23817fc07043f5fceb
               onError={e => e.target.src = '/assets/public/Rankriselogo.webp'} />
             <div className="mb-3">
               <label className="form-label fw-bold small text-uppercase text-muted">Replace Image (optional)</label>
