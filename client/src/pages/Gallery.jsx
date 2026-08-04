@@ -118,7 +118,7 @@ const Gallery = () => {
                         className="w-100 h-100"
                         style={{ objectFit: 'cover', transition: 'transform 0.4s ease' }}
                         loading="lazy"
-                        onError={(e) => { e.target.src = '/assets/public/Rankriselogo.JPG'; }}
+                        onError={(e) => { e.target.src = '/assets/public/Rankriselogo.webp'; }}
                       />
                       <div className="gallery-overlay d-flex flex-column align-items-center justify-content-center text-white p-3">
                         <span className="badge bg-warning text-dark mb-2 px-3 py-1" style={{ fontSize: '11px' }}>{img.category}</span>

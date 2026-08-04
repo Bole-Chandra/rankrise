@@ -59,12 +59,12 @@ const BiPC_NEET = () => {
         <section>
           <div className="hero-section position-relative d-none d-md-block">
             <div>
-              <img src="/assets/public/INTERMEDIATE-NEET Banner.JPG" alt="Best BIPC with NEET Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
+              <img src="/assets/public/INTERMEDIATE-NEET Banner.webp" alt="Best BIPC with NEET Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
             </div>
           </div>
           <div className="hero-section-mobile d-md-none">
             <div>
-              <img src="/assets/public/juniorslider2.JPG" alt="Best BIPC with NEET Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
+              <img src="/assets/public/juniorslider2.webp" alt="Best BIPC with NEET Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="lazy" />
             </div>
           </div>
         </section>
@@ -117,7 +117,7 @@ const BiPC_NEET = () => {
                 </div>
                 <div>
                   <div className="d-none d-md-block">
-                    <img src="/assets/public/EAMCETBANNER.JPG" alt="EAMCET Banner" className="w-100" loading="eager" />
+                    <img src="/assets/public/EAMCETBANNER.webp" alt="EAMCET Banner" className="w-100" loading="lazy" />
                   </div>
                 </div>
               </div>

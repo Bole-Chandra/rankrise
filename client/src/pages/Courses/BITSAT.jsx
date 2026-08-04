@@ -64,7 +64,7 @@ const BITSAT = () => {
         <section>
           <div className="hero-section position-relative d-none d-md-block">
             <div>
-              <img src="/assets/public/BITSAT-Website-Banner.JPG" alt="Best BITSAT Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
+              <img src="/assets/public/BITSAT-Website-Banner.webp" alt="Best BITSAT Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
             </div>
           </div>
           <div className="hero-section-mobile d-md-none">
@@ -74,14 +74,14 @@ const BITSAT = () => {
                   <div className="carousel-item active">
                     <div className="row">
                       <div>
-                        <img src="/assets/public/hero-slider7.JPG" className="img-fluid hero-img" alt="Best BITSAT Coaching Institute in Hyderabad" />
+                        <img src="/assets/public/hero-slider7.webp" className="img-fluid hero-img" alt="Best BITSAT Coaching Institute in Hyderabad" />
                       </div>
                     </div>
                   </div>
                   <div className="carousel-item">
                     <div className="row">
                       <div>
-                        <img src="/assets/public/hero-slider8.JPG" className="img-fluid hero-img" alt="Best BITSAT Coaching Institute in Hyderabad" />
+                        <img src="/assets/public/hero-slider8.webp" className="img-fluid hero-img" alt="Best BITSAT Coaching Institute in Hyderabad" />
                       </div>
                     </div>
                   </div>
@@ -136,7 +136,7 @@ const BITSAT = () => {
                 </div>
                 <div>
                   <div className="d-none d-md-block">
-                    <img src="/assets/public/JEE Mains & BITSAT Banner.JPG" alt="JEE Mains and BITSAT Banner" className="w-100" loading="eager" />
+                    <img src="/assets/public/JEE Mains & BITSAT Banner.webp" alt="JEE Mains and BITSAT Banner" className="w-100" loading="lazy" />
                   </div>
                 </div>
               </div>

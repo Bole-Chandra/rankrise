@@ -35,12 +35,12 @@ const About = () => {
         <section>
           <div className="hero-section position-relative d-none d-md-block">
             <div>
-              <img src="/assets/public/aboutbanner.JPG" alt="Best Coaching Institutes for NEET, IIT JEE Main & Advanced, and Olympiads - Rankrise Coaching Centers" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
+              <img src="/assets/public/aboutbanner.webp" alt="Best Coaching Institutes for NEET, IIT JEE Main & Advanced, and Olympiads - Rankrise Coaching Centers" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
             </div>
           </div>
           <div className="hero-section-mobile d-md-none">
             <div>
-              <img src="/assets/public/Aboutus-mobile.JPG" alt="Best Coaching Institutes for NEET, IIT JEE Main & Advanced, and Olympiads - Rankrise Coaching Centers" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
+              <img src="/assets/public/Aboutus-mobile.webp" alt="Best Coaching Institutes for NEET, IIT JEE Main & Advanced, and Olympiads - Rankrise Coaching Centers" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="lazy" />
             </div>
           </div>
         </section>
@@ -102,7 +102,7 @@ const About = () => {
             <h2 className="my-3">Our Vision &amp; Our Mission</h2>
           </div>
           <div className="container text-center">
-            <img src="/assets/public/ourvision-ourmission.jpg" alt style={{ width: '85%' }} loading="eager" />
+            <img src="/assets/public/ourvision-ourmission.webp" alt="Rankrise vision and mission" style={{ width: '85%' }} loading="lazy" />
           </div>
         </section>
         <section className="mb-5">
@@ -242,7 +242,7 @@ const About = () => {
                     </ul>
                   </div>
                   <div className="card-back">
-                    <img src="/assets/public/Faculty.jpg" alt="Expert & Experienced Faculty at Rankrise" loading="eager" />
+                    <img src="/assets/public/Faculty.webp" alt="Expert & Experienced Faculty at Rankrise" loading="lazy" />
                     <h3>Expert Faculty</h3>
                   </div>
                 </div>
@@ -270,7 +270,7 @@ const About = () => {
                     </ul>
                   </div>
                   <div className="card-back">
-                    <img src="/assets/public/Curriculum.png" alt="Structured & Result-Oriented Curriculum" loading="eager" />
+                    <img src="/assets/public/Curriculum.webp" alt="Structured & Result-Oriented Curriculum" loading="lazy" />
                     <h3>Structured &amp; Result-Oriented Curriculum</h3>
                   </div>
                 </div>
@@ -300,7 +300,7 @@ const About = () => {
                     </ul>
                   </div>
                   <div className="card-back">
-                    <img src="/assets/public/PersonalizedMentorship.jpg" alt="Personalized Mentorship at Rankrise" loading="eager" />
+                    <img src="/assets/public/PersonalizedMentorship.webp" alt="Personalized Mentorship at Rankrise" loading="lazy" />
                     <h3>Personalized Mentorship</h3>
                   </div>
                 </div>
@@ -328,7 +328,7 @@ const About = () => {
                     </ul>
                   </div>
                   <div className="card-back">
-                    <img src="/assets/public/DailyPracticeAssignments.jpg" alt="Daily Practice & Assignments" loading="eager" />
+                    <img src="/assets/public/DailyPracticeAssignments.webp" alt="Daily Practice & Assignments" loading="lazy" />
                     <h3>Daily Practice &amp; Assignments</h3>
                   </div>
                 </div>
@@ -358,7 +358,7 @@ const About = () => {
                     </ul>
                   </div>
                   <div className="card-back">
-                    <img src="/assets/public/WeeklyMonthlyTestSeries.png" alt="Weekly & Monthly Test Series" loading="eager" />
+                    <img src="/assets/public/WeeklyMonthlyTestSeries.webp" alt="Weekly & Monthly Test Series" loading="lazy" />
                     <h3>Weekly &amp; Monthly Test Series</h3>
                   </div>
                 </div>
@@ -386,7 +386,7 @@ const About = () => {
                     </ul>
                   </div>
                   <div className="card-back">
-                    <img src="/assets/public/StrongCompetitiveExamTraining.jpg" alt="Strong Competitive Exam Training" loading="eager" />
+                    <img src="/assets/public/StrongCompetitiveExamTraining.webp" alt="Strong Competitive Exam Training" loading="lazy" />
                     <h3>Strong Competitive Exam Training</h3>
                   </div>
                 </div>
@@ -416,7 +416,7 @@ const About = () => {
                     </ul>
                   </div>
                   <div className="card-back">
-                    <img src="/assets/public/discipline.jpg" alt="Disciplined & Student-Friendly Environment" loading="eager" />
+                    <img src="/assets/public/discipline.webp" alt="Disciplined & Student-Friendly Environment" loading="lazy" />
                     <h3>Disciplined &amp; Student-Friendly Environment</h3>
                   </div>
                 </div>
@@ -444,7 +444,7 @@ const About = () => {
                     </ul>
                   </div>
                   <div className="card-back">
-                    <img src="/assets/public/SmartClassroomsDigital Support.jpg" alt="Smart Classrooms & Digital Support" loading="eager" />
+                    <img src="/assets/public/SmartClassroomsDigital Support.webp" alt="Smart Classrooms & Digital Support" loading="lazy" />
                     <h3>Smart Classrooms &amp; Digital Support</h3>
                   </div>
                 </div>
@@ -474,7 +474,7 @@ const About = () => {
                     </ul>
                   </div>
                   <div className="card-back">
-                    <img src="/assets/public/SafeSupervisedHostelFacilities.jpg" alt="Safe & Supervised Hostel Facilities" loading="eager" />
+                    <img src="/assets/public/SafeSupervisedHostelFacilities.webp" alt="Safe & Supervised Hostel Facilities" loading="lazy" />
                     <h3>Safe &amp; Supervised Hostel Facilities</h3>
                   </div>
                 </div>
@@ -502,7 +502,7 @@ const About = () => {
                     </ul>
                   </div>
                   <div className="card-back">
-                    <img src="/assets/public/ProvenTrackRecordofResults.jpg" alt="Proven Track Record of Results" loading="eager" />
+                    <img src="/assets/public/ProvenTrackRecordofResults.webp" alt="Proven Track Record of Results" loading="lazy" />
                     <h3>Proven Track Record of Results</h3>
                   </div>
                 </div>

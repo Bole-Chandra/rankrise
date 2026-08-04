@@ -1,13 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 
-@font-face {
-  font-family: 'Segoe UI';
-  src: url('/fonts/segoe/segoeui.woff2') format('woff2'),
-    url('/fonts/segoe/segoeui.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+/* Note: no custom @font-face for "Segoe UI" — it's used purely as a
+   native system-font fallback below (Windows/macOS already ship it), so
+   there's nothing to load. A @font-face block pointing at nonexistent
+   font files used to live here and caused guaranteed 404s on every page
+   load. */
 * {
   font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
 }
@@ -206,7 +204,7 @@ p {
 .youtube {
   background: #FFF;
   border-bottom-left-radius: 10px;
-  color: #ffff00;
+  color: #cc0000;
 }
 
 .download-btn {
@@ -470,6 +468,21 @@ p {
 
 .carousel-item {
   transition: transform 0.1s ease-in-out !important;
+}
+
+/* Reserves the banner's real aspect ratio immediately, so the page doesn't
+   jump/shift once the hero image finishes loading (fixes CLS). */
+#carouselExampleControls .carousel-item img {
+  aspect-ratio: 2.844 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  #carouselExampleControls .carousel-item img {
+    aspect-ratio: 1.44 / 1;
+  }
 }
 
 .rankcards {
@@ -1070,7 +1083,7 @@ form select.form-select:focus {
 
 /* Background Images */
 .qustion-paper {
-  background: url('/Public/rank_predictor.jpg') center/cover no-repeat;
+  background: url('/assets/public/rank_predictor.webp') center/cover no-repeat;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   transform: translateX(-100px);
@@ -1139,7 +1152,7 @@ form select.form-select:focus {
 }
 
 .faq-section-row .text-bg-image {
-  background: url("/assets/public/mainlinksbg.jpg") center/cover no-repeat;
+  background: url("/assets/public/mainlinksbg.webp") center/cover no-repeat;
   height: 86%;
   position: relative;
   border-radius: 15px;
@@ -1280,7 +1293,7 @@ form select.form-select:focus {
 }
 
 .footer-bg {
-  background-image: url("/assets/public/students.JPG");
+  background-image: url("/assets/public/students.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

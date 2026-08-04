@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-2">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src="/assets/public/Rankriselogo.JPG" alt="Rankrise Logo" height="50" loading="eager" />
+          <img src="/assets/public/Rankriselogo.webp" alt="Rankrise Logo" height="50" loading="eager" />
         </Link>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"

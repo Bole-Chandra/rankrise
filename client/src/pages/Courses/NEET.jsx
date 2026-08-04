@@ -65,7 +65,7 @@ const NEET = () => {
         <section>
           <div className="hero-section position-relative d-none d-md-block">
             <div>
-              <img src="/assets/public/NEET-Website-Banner.JPG" alt="Best NEET Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
+              <img src="/assets/public/NEET-Website-Banner.webp" alt="Best NEET Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
             </div>
           </div>
           <div className="hero-section-mobile d-md-none">
@@ -73,10 +73,10 @@ const NEET = () => {
               <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <img src="/assets/public/hero-slider3.JPG" className="img-fluid hero-img" alt="Best NEET Coaching Institute in Hyderabad" />
+                    <img src="/assets/public/hero-slider3.webp" className="img-fluid hero-img" alt="Best NEET Coaching Institute in Hyderabad" />
                   </div>
                   <div className="carousel-item">
-                    <img src="/assets/public/hero-slider4.JPG" className="img-fluid hero-img" alt="Best NEET Coaching Institute in Hyderabad" />
+                    <img src="/assets/public/hero-slider4.webp" className="img-fluid hero-img" alt="Best NEET Coaching Institute in Hyderabad" />
                   </div>
                 </div>
               </div>
@@ -130,7 +130,7 @@ const NEET = () => {
                 </div>
                 <div>
                   <div className="d-none d-md-block">
-                    <img src="/assets/public/JEE Mains & BITSAT Banner.JPG" alt="Best NEET Coaching in Hyderabad" className="w-100" loading="eager" />
+                    <img src="/assets/public/JEE Mains & BITSAT Banner.webp" alt="Best NEET Coaching in Hyderabad" className="w-100" loading="lazy" />
                   </div>
                 </div>
               </div>

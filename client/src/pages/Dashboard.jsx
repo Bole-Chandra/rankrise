@@ -168,7 +168,7 @@ const Dashboard = () => {
           >
             <i className="fa-solid fa-bars"></i>
           </button>
-          <img src="/assets/public/Rankriselogo.JPG" alt="Logo" style={{ height: '38px', borderRadius: '6px' }} />
+          <img src="/assets/public/Rankriselogo.webp" alt="Logo" style={{ height: '38px', borderRadius: '6px' }} />
           <span style={{ color: '#fff200', fontWeight: 800, fontSize: '1.15rem', letterSpacing: '0.5px' }}>
             RANKRISE Admin Panel
           </span>
@@ -364,6 +364,7 @@ const Dashboard = () => {
                           <td>
                             <select
                               className="form-select form-select-sm fw-bold"
+                              aria-label={`Change status for ${item.name || 'this admission'}`}
                               style={{ minWidth: '110px', display: 'inline-block' }}
                               value={item.status || 'Pending'}
                               disabled={busyId === item._id}

@@ -239,7 +239,7 @@ const AdminGallery = () => {
                           src={getImageSrc(item.image)}
                           alt={item.title}
                           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                          onError={e => e.target.src = '/assets/public/Rankriselogo.JPG'}
+                          onError={e => e.target.src = '/assets/public/Rankriselogo.webp'}
                         />
                         <span style={{
                           position: 'absolute', top: '8px', right: '8px',
@@ -305,7 +305,7 @@ const AdminGallery = () => {
               <button className="btn-close" onClick={() => setEditItem(null)}></button>
             </div>
             <img src={editImagePreview || getImageSrc(editItem.image)} alt={editItem.title} style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: '10px', marginBottom: '12px' }}
-              onError={e => e.target.src = '/assets/public/Rankriselogo.JPG'} />
+              onError={e => e.target.src = '/assets/public/Rankriselogo.webp'} />
             <div className="mb-3">
               <label className="form-label fw-bold small text-uppercase text-muted">Replace Image (optional)</label>
               <input type="file" accept="image/*" className="form-control" onChange={handleEditImageChange} />

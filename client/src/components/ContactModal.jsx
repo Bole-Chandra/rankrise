@@ -38,17 +38,17 @@ const ContactModal = () => {
       </div>
 
       {/* Early Bird Popup */}
-      <div className="modal fade p-2" id="earlyBirdModal" tabIndex="-1" aria-hidden="true">
+      <div className="modal fade p-2" id="earlyBirdModal" tabIndex="-1" aria-hidden="true" aria-label="Early Bird Admission Offer">
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content border-0 bg-transparent position-relative">
             <button type="button" className="btn-close btn-close-white position-absolute top-0 end-0 m-2" style={{ zIndex: 10 }}
               data-bs-dismiss="modal" aria-label="Close"></button>
             {/* Desktop View */}
-            <img src="/assets/public/EarlyBird-banner.jpg" className="img-fluid d-none d-md-block rounded shadow-lg"
+            <img src="/assets/public/EarlyBird-banner.webp" className="img-fluid d-none d-md-block rounded shadow-lg"
               alt="Early Bird Offer" loading="eager" />
             {/* Mobile View */}
             <div className="d-block d-md-none shadow-lg">
-              <img src="/assets/public/Early-Bird-Banner-mobile.JPG" className="img-fluid" alt="Early Bird Offer Mobile"
+              <img src="/assets/public/Early-Bird-Banner-mobile.webp" className="img-fluid" alt="Early Bird Offer Mobile"
                 loading="eager" />
               <div className="text-white shadow" style={{ background: '#e9f6fe', padding: '10px' }}>
                 <div className="p-3 rounded" style={{ background: '#e2ffee' }}>

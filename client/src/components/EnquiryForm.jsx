@@ -98,6 +98,7 @@ const EnquiryForm = ({ buttonStyle = {}, buttonClassName = 'submit-btn btn btn-l
         <select
           name="course"
           id={`${idPrefix}course_select`}
+          aria-label="Select Course"
           className="form-select"
           value={formData.course}
           onChange={handleChange}
@@ -120,6 +121,7 @@ const EnquiryForm = ({ buttonStyle = {}, buttonClassName = 'submit-btn btn btn-l
         <select
           name="program"
           id={`${idPrefix}program_select`}
+          aria-label="Select Program"
           className="form-select"
           value={formData.program}
           onChange={handleChange}

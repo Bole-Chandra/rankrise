@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="row text-md-start text-center">
           <div className="col-md-3 col-12 col-sm-12">
             <div>
-              <img src="/assets/public/Rankriselogo.JPG" alt="Rankrise Logo" className="w-100" style={{ borderRadius: '15px' }} loading="eager" />
+              <img src="/assets/public/Rankriselogo.webp" alt="Rankrise Logo" className="w-100" style={{ borderRadius: '15px' }} loading="eager" />
             </div>
             <p className="mt-4">
               <strong>RANKRISE</strong> is a reputed institute in Hyderabad Since 2011 offering INTERMEDIATE with IIT-JEE,

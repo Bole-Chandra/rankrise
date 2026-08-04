@@ -112,7 +112,7 @@ const Admissions = () => {
                         <input type="tel" className="form-control" name="phone" id="phone" placeholder="+91 Mobile Number *" value={formData.phone} onChange={handleChange} pattern="[1-9]{1}[0-9]{9}" maxLength="10" required />
                       </div>
                       <div className="col-md-6 mb-2">
-                        <label className="form-label">Course *</label>
+                        <label className="form-label" htmlFor="course_select">Course *</label>
                         <select className="form-select" name="course" id="course_select" value={formData.course} onChange={handleChange} required>
                           <option value="">Select Course</option>
                           <option value="NEET Long Term">NEET Long Term</option>
@@ -128,7 +128,7 @@ const Admissions = () => {
                         </select>
                       </div>
                       <div className="col-md-12 mb-2">
-                        <label className="form-label">Program *</label>
+                        <label className="form-label" htmlFor="program_select">Program *</label>
                         <select className="form-select" name="program" id="program_select" value={formData.program} onChange={handleChange} required>
                           <option value="">Select Program</option>
                           <option value="Days-scholar">Days-scholar</option>

@@ -65,7 +65,7 @@ const IITJEE = () => {
           {/* Desktop Banner */}
           <div className="hero-section position-relative d-none d-md-block">
             <div>
-              <img src="/assets/public/IIT-JEE-Website-Banner.JPG" alt="Best IIT Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
+              <img src="/assets/public/IIT-JEE-Website-Banner.webp" alt="Best IIT Coaching Institute in Hyderabad" style={{ width: '100%', borderBottom: '2px solid #005826' }} loading="eager" />
             </div>
           </div>
 
@@ -77,14 +77,14 @@ const IITJEE = () => {
                   <div className="carousel-item active">
                     <div className="row">
                       <div>
-                        <img src="/assets/public/hero-slider1.JPG" className="img-fluid hero-img" alt="Best IIT Coaching Institute in Hyderabad" />
+                        <img src="/assets/public/hero-slider1.webp" className="img-fluid hero-img" alt="Best IIT Coaching Institute in Hyderabad" />
                       </div>
                     </div>
                   </div>
                   <div className="carousel-item">
                     <div className="row">
                       <div>
-                        <img src="/assets/public/hero-slider2.JPG" className="img-fluid hero-img" alt="Best IIT Coaching Institute in Hyderabad" />
+                        <img src="/assets/public/hero-slider2.webp" className="img-fluid hero-img" alt="Best IIT Coaching Institute in Hyderabad" />
                       </div>
                     </div>
                   </div>
@@ -140,7 +140,7 @@ const IITJEE = () => {
                 </div>
                 <div>
                   <div className="d-none d-md-block">
-                    <img src="/assets/public/JEE Mains & BITSAT Banner.JPG" alt="JEE Mains and BITSAT Banner" className="w-100" loading="eager" />
+                    <img src="/assets/public/JEE Mains & BITSAT Banner.webp" alt="JEE Mains and BITSAT Banner" className="w-100" loading="lazy" />
                   </div>
                 </div>
               </div>
