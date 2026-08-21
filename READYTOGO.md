@@ -179,7 +179,7 @@ git push -u origin main
    ```
    MONGODB_URI=<PASTE-YOUR-ATLAS-CONNECTION-STRING-HERE>
    JWT_SECRET=<PASTE-A-LONG-RANDOM-STRING-HERE>
-   CLIENT_URL=<PASTE-YOUR-VERCEL-URL-HERE-ONCE-YOU-HAVE-IT>
+   CLIENT_URL=https://rankrise.in
    NODE_ENV=production
    EMAIL_HOST=smtp.hostinger.com
    EMAIL_PORT=465
@@ -220,7 +220,7 @@ git push -u origin main
    ```
 5. Click **Deploy**. You'll get a URL like:
    ```
-   https://<PLACEHOLDER-vercel-project-name>.vercel.app
+   https://rankrise.in
    ```
 
 ### Step 4 — Connect them
@@ -459,4 +459,5 @@ Go through this on the **live** URL, not localhost, before calling it done:
 Remember: **any `client/.env` change requires `npm run build` again**
 (Part 4) before it shows up on the live site — the built `dist/` folder is
 a frozen snapshot, not something that reads `.env` live.
+
 

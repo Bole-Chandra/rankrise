@@ -39,7 +39,8 @@ app.use(compression());
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5173',
-  'https://rankrise-psi.vercel.app',
+  'https://rankrise.in',
+  'https://www.rankrise.in',
 
   ...(process.env.CLIENT_URL
     ? process.env.CLIENT_URL

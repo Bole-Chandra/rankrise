@@ -102,7 +102,7 @@ Document).
 
 - [ ] GitHub repo URL: `_________________________________________________`
 - [ ] Render backend URL: `https://___________________________.onrender.com`
-- [ ] Vercel frontend URL: `https://___________________________.vercel.app`
+- [x] Live site URL: `https://rankrise.in`
 
 ---
 
@@ -121,4 +121,5 @@ Document).
 Once every box above is filled in and copied to its `.env` file, you're
 ready to follow `READYTOGO.md` start to finish without stopping to look
 anything up.
+
 
