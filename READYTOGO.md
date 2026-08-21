@@ -141,15 +141,13 @@ folder.
 
 ---
 
-## PART 5 — Test drive first: Vercel + Render (free, do this before touching Hostinger)
+## PART 5 — Deploy on Hostinger (rankrise.in)
 
-This is the smart order: get the whole thing working end-to-end on free
-throwaway URLs first, catch every mistake here where nothing is public or
-paid for yet, *then* repeat the same steps for real on Hostinger with
-confidence. Skip straight to Part 6 if you'd rather go straight to
-production, but this is worth the 20 minutes.
+The site is hosted entirely on Hostinger at **https://rankrise.in** — one
+Node.js app serves both the API and the built frontend from the same
+domain.
 
-### Step 1 — Push the code to GitHub (needed for both Vercel and Render)
+### Step 1 — Push the code to GitHub (recommended backup)
 ```bash
 cd new1
 git init
@@ -167,19 +165,20 @@ git push -u origin main
 > automatic. Verify with `git status` before pushing; if you see `.env`
 > listed as a file to be committed, stop and fix `.gitignore` first.
 
-### Step 2 — Backend on Render
-1. [render.com](https://render.com) → sign up/log in → **New → Web Service**
-2. Connect the GitHub repo you just pushed
-3. Fill in:
-   - **Root Directory**: `server`
-   - **Build Command**: `npm install`
-   - **Start Command**: `node server.js`
-   - **Instance Type**: Free
-4. **Environment** tab → add these (fill in your real values):
+### Step 2 — Create the Node.js app in hPanel
+hPanel → Advanced → Node.js → **Create application**:
+   - **Application root**: the domain folder (`/`)
+   - **Domain**: `rankrise.in`
+   - **Framework**: Express
+   - **Startup file**: `server/server.js`
+   - **Build command**: leave empty (client/dist is pre-built)
+
+### Step 3 — Environment variables
+In the app's **Environment** tab add (fill in your real values):
    ```
    MONGODB_URI=<PASTE-YOUR-ATLAS-CONNECTION-STRING-HERE>
    JWT_SECRET=<PASTE-A-LONG-RANDOM-STRING-HERE>
-   CLIENT_URL=https://rankrise.in
+   CLIENT_URL=https://rankrise.in,https://www.rankrise.in
    NODE_ENV=production
    EMAIL_HOST=smtp.hostinger.com
    EMAIL_PORT=465
@@ -188,60 +187,20 @@ git push -u origin main
    EMAIL_PASS=<PASTE-THAT-MAILBOX-PASSWORD-HERE>
    EMAIL_TO=info@rankrise.in
    ```
-5. Click **Create Web Service** — first deploy takes a few minutes. You'll
-   get a URL like:
-   ```
-   https://<PLACEHOLDER-render-service-name>.onrender.com
-   ```
-   Copy this — you need it in Step 3.
 
-   > Free Render services "sleep" after 15 minutes of no traffic and take
-   > ~30-60 seconds to wake back up on the next request. Fine for testing;
-   > for production either upgrade to a paid Render instance or (as
-   > planned) move to Hostinger for the real launch.
+### Step 4 — Upload & run
+Upload `rankrise-deploy.zip` to the app root and extract it (File Manager
+or SSH), then click **Restart** in hPanel. The app serves the API and the
+React build together from `https://rankrise.in`.
 
-### Step 3 — Frontend on Vercel
-1. Locally: `cd client && echo "VITE_API_URL=<PASTE-YOUR-RENDER-URL-FROM-STEP-2>" >> .env`
-2. [vercel.com](https://vercel.com) → sign up/log in → **Add New → Project**
-   → import the same GitHub repo
-3. Configure:
-   - **Root Directory**: `client`
-   - **Framework Preset**: Vite (should auto-detect)
-   - **Build Command**: `npm run build` (default)
-   - **Output Directory**: `dist` (default)
-4. **Environment Variables** — add every one of these (fill in your real
-   values — same ones as your local `client/.env`):
-   ```
-   VITE_API_URL=<PASTE-YOUR-RENDER-URL-FROM-STEP-2>
-   VITE_GA_MEASUREMENT_ID=G-QS6RR4EMN7
-   VITE_GOOGLE_ADS_ID=AW-18267384799
-   VITE_GOOGLE_ADS_LABEL_LEAD=pPJgCO6uvNkcEN_XyIZE
-   VITE_GTM_ID=GTM-KFP8R7FR
-   ```
-5. Click **Deploy**. You'll get a URL like:
-   ```
-   https://rankrise.in
-   ```
-
-### Step 4 — Connect them
-Go back to Render → your web service → **Environment** → update
-`CLIENT_URL` to your real Vercel URL from Step 3 → save (this redeploys
-automatically). This is what allows the frontend to actually call the API
-without the browser blocking it as cross-origin.
-
-### Step 5 — Test everything on these throwaway URLs
-Open your Vercel URL and go through the **entire** Part 3 verification
-checklist plus:
+### Step 5 — Test everything on https://rankrise.in
+Go through the **entire** Part 3 verification checklist plus:
 - [ ] Sign up as a new student, verify email works, log in
 - [ ] Submit the enquiry form → check it shows up in the admin dashboard
 - [ ] Log in as admin (`info@rankrise.in` / the password from Part 6 →
       "Create your real accounts", once you've run `npm run seed` against
-      this Render-connected database)
+      this production database)
 - [ ] Tag Assistant / GA4 Realtime / `window.dataLayer` all show activity
-
-Once everything above passes, you've proven the *code* works end-to-end —
-any problems left at the Hostinger stage will be hosting-configuration
-issues specifically, not app bugs, which makes them much faster to debug.
 
 ---
 
@@ -359,24 +318,15 @@ Node app on your plan.
 #### Step 1 — Set up MongoDB Atlas
 Same as Option A, Step 1 above.
 
-#### Step 2 — Deploy the backend to a Node-hosting service
-Pick one — all have free or cheap tiers and deploy straight from a git
-repo or a zip, no server management:
-- **[Render.com](https://render.com)** — easiest for a first deploy;
-  "New Web Service" → connect your repo or upload → set **Root Directory**
-  to `server`, **Build Command** to `npm install`, **Start Command** to
-  `node server.js` → add the same environment variables as Option A Step 5
-  → deploy. You'll get a URL like `https://rankrise-api.onrender.com`.
-- **[Railway.app](https://railway.app)** — same idea, similarly simple.
-- A **Hostinger VPS** — if you'd rather stay entirely inside Hostinger,
-  a VPS plan gives full root SSH access and no Passenger requirement; you
-  install Node + [PM2](https://pm2.keymetrics.io) yourself
-  (`npm install -g pm2`, then `pm2 start server.js --name rankrise-api`,
-  `pm2 save`, `pm2 startup`) and open port 80/443 directly (or put Nginx in
-  front of it — standard VPS setup, not shared hosting).
+#### Step 2 — Deploy the backend on a Hostinger VPS
+If your shared plan can't run a persistent Node app, a **Hostinger VPS**
+keeps everything inside Hostinger with full root SSH access and no
+Passenger requirement: install Node + [PM2](https://pm2.keymetrics.io)
+yourself (`npm install -g pm2`, then `pm2 start server.js --name rankrise-api`,
+`pm2 save`, `pm2 startup`) and open port 80/443 directly (or put Nginx in
+front of it — standard VPS setup, not shared hosting).
 
-Whichever you pick, note the live backend URL — you need it in the next
-step.
+Note the live backend URL — you need it in the next step.
 
 #### Step 3 — Build the frontend pointed at that backend URL
 ```bash
@@ -397,7 +347,7 @@ rsync -avz dist/ your-username@your-server-ip:public_html/
 (Find your SSH username/host/port in hPanel → Advanced → SSH Access.)
 
 #### Step 5 — CORS
-On the backend host (Render/Railway/VPS), set `CLIENT_URL` to
+On the backend host (VPS), set `CLIENT_URL` to
 `https://rankrise.in,https://www.rankrise.in` — this is what allows your
 Hostinger-hosted frontend to actually talk to the API without being
 blocked by the browser.

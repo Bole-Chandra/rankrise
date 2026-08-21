@@ -7,7 +7,7 @@ have everything in one place, then copy each one across.
 
 Anything already filled in below is a value already set up for you in this
 project — just there so you can see it and copy it elsewhere (e.g. into
-Render/Vercel) without hunting for it.
+Hostinger) without hunting for it.
 
 ---
 
@@ -18,8 +18,8 @@ Render/Vercel) without hunting for it.
       `<password>` in it with your actual database user's password)
 
 **Goes into:** `server/.env` → `MONGODB_URI=`
-**Also goes into:** Render's Environment tab (Part 5) and Hostinger's
-Node.js app environment variables (Part 6), if/when you deploy there.
+**Also goes into:** Hostinger's Node.js app environment variables (Part 6),
+when you deploy there.
 
 ---
 
@@ -30,7 +30,7 @@ Node.js app environment variables (Part 6), if/when you deploy there.
       `_________________________________________________`
       Generate one with: `node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"`
 
-**Goes into:** `server/.env` → `JWT_SECRET=` (and Render/Hostinger env vars)
+**Goes into:** `server/.env` → `JWT_SECRET=` (and Hostinger env vars)
 
 ---
 
@@ -101,7 +101,7 @@ Document).
 ## 7. Test-drive hosting (Part 5 of READYTOGO.md) — fill in as you go
 
 - [ ] GitHub repo URL: `_________________________________________________`
-- [ ] Render backend URL: `https://___________________________.onrender.com`
+- [x] Backend URL: `https://rankrise.in`
 - [x] Live site URL: `https://rankrise.in`
 
 ---
@@ -121,5 +121,6 @@ Document).
 Once every box above is filled in and copied to its `.env` file, you're
 ready to follow `READYTOGO.md` start to finish without stopping to look
 anything up.
+
 
 
