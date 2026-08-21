@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import EnquiryForm from '../../components/EnquiryForm';
+import DocumentList from '../../components/DocumentList';
 import { trackCallClick } from '../../utils/analytics';
 
 const MPC_IIT = () => {
@@ -79,7 +80,7 @@ const MPC_IIT = () => {
                 <div className="text-center">
                   <div style={{ background: '#ffc107' }} className="p-2">
                     <h4 className="fw-bold mb-1 admission-title">
-                      ADMISSION OPEN for 2026–2027
+                      ADMISSIONS OPEN
                     </h4>
                   </div>
                   <p style={{ fontSize: 20 }} className="mb-1 d-inline-flex">
@@ -90,7 +91,7 @@ const MPC_IIT = () => {
                   </p>
                 </div>
                 <div className="sidebar text-white shadow enquiry-box">
-                  <h3 className="fw-bold formsubheading text-center d-inline-flex" style={{ fontSize: 24 }}>
+                  <h3 className="fw-bold formsubheading text-center d-block w-100" style={{ fontSize: 24 }}>
                     Your Success, Our Mission
                   </h3>
                   <EnquiryForm />
@@ -109,7 +110,7 @@ const MPC_IIT = () => {
                     <div className="col-md-7">
                       <ul>
                         <li><Link to="/college/mpc-iit" className="redirections">INTER: MPC with IIT-JEE</Link></li>
-                        <li><Link to="/college/bipc-neet" className="redirections">INTER: MPC with EAMCET</Link></li>
+                        <li><Link to="/college/mpc-eamcet" className="redirections">INTER: MPC with EAMCET</Link></li>
                       </ul>
                     </div>
                   </div>
@@ -313,30 +314,20 @@ const MPC_IIT = () => {
                         <li><Link to="/courses/neet" className="redirections">NEET Coaching</Link></li>
                         <li><Link to="/courses/eamcet" className="redirections">EAMCET Coaching</Link></li>
                         <li><Link to="/courses/bitsat" className="redirections">BITSAT Coaching</Link></li>
-                        <li><Link to="/college/bipc-neet" className="redirections">INTER: MPC with EAMCET</Link></li>
-                        <li><Link to="/college/mpc-eamcet" className="redirections">INTER: BIPC with NEET</Link></li>
+                        <li><Link to="/college/mpc-eamcet" className="redirections">INTER: MPC with EAMCET</Link></li>
+                        <li><Link to="/college/bipc-neet" className="redirections">INTER: BIPC with NEET</Link></li>
                       </ul>
                     </div>
                   </div>
 
                   {/* Tab 2: Exam Pattern */}
                   <div className="tab-pane fade" id="tab2">
-                    <section className="coming-section my-5">
-                      <h2 className="coming-title fw-bold display-6">
-                        <span className="yellow">COMING</span> SOON
-                      </h2>
-                      <p className="mt-3 fs-5">Stay tuned for something amazing!</p>
-                    </section>
+                    <DocumentList course="mpc-iit" section="exam-pattern" />
                   </div>
 
                   {/* Tab 3: Syllabus */}
                   <div className="tab-pane fade" id="tab3">
-                    <section className="coming-section my-5">
-                      <h2 className="coming-title fw-bold display-6">
-                        <span className="yellow">COMING</span> SOON
-                      </h2>
-                      <p className="mt-3 fs-5">Stay tuned for something amazing!</p>
-                    </section>
+                    <DocumentList course="mpc-iit" section="syllabus" />
                   </div>
                 </div>
               </div>

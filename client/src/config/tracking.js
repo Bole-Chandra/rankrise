@@ -77,8 +77,8 @@ const tracking = {
     call: import.meta.env.VITE_GOOGLE_ADS_LABEL_CALL || '',
     // WhatsApp button clicked
     whatsapp: import.meta.env.VITE_GOOGLE_ADS_LABEL_WHATSAPP || '',
-    // Brochure PDF downloaded
-    brochure: import.meta.env.VITE_GOOGLE_ADS_LABEL_BROCHURE || '',
+    // File downloaded
+    tracking: import.meta.env.VITE_GOOGLE_ADS_LABEL || '',
   },
 
   // Every phone number used anywhere on the site, with a friendly label so

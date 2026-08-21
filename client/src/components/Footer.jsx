@@ -60,21 +60,28 @@ const Footer = () => {
 
           <div className="col-md-4 px-md-5 px-0 col-12 col-sm-12">
             <h4 className="mb-3" style={{ color: '#f3f001' }}>Contact Us</h4>
-            <div>
-              <p className="my-4 text-white fs-5">
-                <i className="fas fa-envelope me-2" style={{ color: '#f3f001' }}></i>
-                info@rankrise.in
-              </p>
-              <div className="phone-box justify-content-center">
-                <i className="fa fa-phone phone-icon" aria-hidden="true"></i>
-                <div className="phone-list">
-                  <a href="tel:9948962952" onClick={() => trackCallClick('9948962952', 'footer')}>+91 9948 962 952</a>
-                  <a href="tel:8886945745" onClick={() => trackCallClick('8886945745', 'footer')}>+91 8886 945 745</a>
-                  <a href="tel:8121571596" onClick={() => trackCallClick('8121571596', 'footer')}>+91 8121 571 596</a>
-                  <a href="tel:8121492622" onClick={() => trackCallClick('8121492622', 'footer')}>+91 8121 492 622</a>
-                </div>
-              </div>
-            </div>
+            <ul className="contact-list list-unstyled mb-0">
+              <li className="contact-row">
+                <i className="fas fa-envelope contact-icon" style={{ color: '#f3f001' }}></i>
+                <a href="mailto:info@rankrise.in" className="text-white contact-mail-link">info@rankrise.in</a>
+              </li>
+              <li className="contact-row">
+                <i className="fa fa-phone contact-icon" aria-hidden="true"></i>
+                <a href="tel:9948962952" onClick={() => trackCallClick('9948962952', 'footer')}>+91 9948 962 952</a>
+              </li>
+              <li className="contact-row">
+                <i className="fa fa-phone contact-icon" aria-hidden="true"></i>
+                <a href="tel:8886945745" onClick={() => trackCallClick('8886945745', 'footer')}>+91 8886 945 745</a>
+              </li>
+              <li className="contact-row">
+                <i className="fa fa-phone contact-icon" aria-hidden="true"></i>
+                <a href="tel:8121571596" onClick={() => trackCallClick('8121571596', 'footer')}>+91 8121 571 596</a>
+              </li>
+              <li className="contact-row">
+                <i className="fa fa-phone contact-icon" aria-hidden="true"></i>
+                <a href="tel:8121492622" onClick={() => trackCallClick('8121492622', 'footer')}>+91 8121 492 622</a>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -121,7 +128,7 @@ const Footer = () => {
         <div className="row align-items-center justify-content-between">
           <div className="col-md-6 text-white small">
             <p className="text-white mb-0" style={{ color: '#fff !important' }}>
-              © 2025 <strong className="px-1 sitename">RANKRISE Educational Institutions</strong> <span>All Rights Reserved</span>
+              © 2026 <strong className="px-1 sitename">RANKRISE Educational Institutions</strong> <span>All Rights Reserved</span>
             </p>
             <div className="mt-1">
               <Link to="/terms-conditions" className="footer-link">Terms & Conditions</Link>

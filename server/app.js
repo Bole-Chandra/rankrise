@@ -302,6 +302,12 @@ app.use(
   require('./routes/videoRoutes')
 );
 
+
+app.use(
+  '/api/documents',
+  require('./routes/documentRoutes')
+);
+
 // ─── Health Check ─────────────────────────────────────────────────────────────
 
 app.get('/api', (req, res) => {

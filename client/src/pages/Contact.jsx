@@ -1,8 +1,6 @@
-import { Link } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import EnquiryForm from '../components/EnquiryForm';
-import { trackDownload } from '../utils/analytics';
 
 const Contact = () => {
   useEffect(() => {
@@ -45,12 +43,6 @@ const Contact = () => {
         <img src="/assets/public/Mobile-Contact.webp" alt="Mobile Banner" style={{width: '100%', borderBottom: '2px solid #005826'}} loading="lazy" />
       </div>
     </div>
-  </section>
-  <section className="brochurestyle text-center d-md-none">
-    <Link to="/assets/brochure/Rankrise-Brochure.pdf" download onClick={() => trackDownload('Rankrise-Brochure.pdf', 'brochure')} className="fw-bold text-white text-decoration-none">
-      <i className="fa-solid fa-file-arrow-down me-1" style={{color: '#fff82c', fontSize: 20}} />
-      Click here to Download Brochure
-    </Link>
   </section>
   <section className="my-5">
     <div className="container">
@@ -255,7 +247,7 @@ const Contact = () => {
           <div className="card shadow p-3" style={{borderRadius: 12}}>
             <div className="row  align-items-center">
               <div className="col-md-6">
-                ] <p className="mb-1">RANKRISE - Best INTERMEDIATE (Junior Colleges) with NEET | IIT-JEE | EAMCET Coaching
+                <p className="mb-1">RANKRISE - Best INTERMEDIATE (Junior Colleges) with NEET | IIT-JEE | EAMCET Coaching
                   in
                   Kphb Main Road,Hyderabad.</p>
                 <p className="mb-1"><strong className="subHcolor">Admission Support:</strong> 9948962952</p>

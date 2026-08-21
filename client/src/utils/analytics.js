@@ -136,7 +136,7 @@ export const trackYouTubeClick = (location) => {
 };
 
 /**
- * Track a file download (brochure, etc).
+ * Track a file download (etc).
  */
 export const trackDownload = (fileName, conversionLabelKey) => {
   trackEvent('file_download', { file_name: fileName });

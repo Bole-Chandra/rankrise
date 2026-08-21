@@ -200,7 +200,7 @@ const Home = () => {
             <div className="updates-marquee flex-grow-1">
               <marquee behavior="scroll" direction="left" scrollamount={6} className="scroller py-0">
                 LONG TERM &amp; SHORT TERM Coaching for IIT-JEE | NEET | EAMCET &amp; INTERMEDIATE for MPC / BIPC Admissions Are In
-                Progress.Join Today!!
+                Progress. Join Today!!
               </marquee>
             </div>
           </div>
@@ -248,7 +248,7 @@ const Home = () => {
               className="p-2 rounded-3"
             >
               <p className="fw-bold mb-1 admission-title text-dark" style={{ fontSize: '1.5rem', lineHeight: 1.2 }}>
-                ADMISSIONS OPEN for 2026–2027
+                ADMISSIONS OPEN
               </p>
             </div>
             <p style={{ fontSize: 20 }} className="mb-1  d-inline-flex ">
@@ -260,7 +260,7 @@ const Home = () => {
           </div>
           <div className="sidebar shadow enquiry-box ">
             <div className="text-center">
-              <p className="fw-bold formsubheading  d-inline-flex" style={{ fontSize: 24 }}>Your Success, Our Mission</p>
+              <p className="fw-bold formsubheading text-center d-block w-100" style={{ fontSize: 24 }}>Your Success, Our Mission</p>
             </div>
             <EnquiryForm
               idPrefix="mobile_"

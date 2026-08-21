@@ -48,7 +48,7 @@ site-wide, with no extra work needed:
 - **Every "Call Now" click**, anywhere on the site, with which phone number
   was clicked (Primary / Secondary / Footer Line 1 / Footer Line 2)
 - **Every WhatsApp button click**
-- **Brochure PDF download** (Contact page)
+- **Document PDF download** (Contact page)
 - **YouTube channel link click**
 - **Form started** (first keystroke) vs **form submitted** — so you can see
   drop-off, not just completions
@@ -67,7 +67,7 @@ the conversion action in Ads and paste its label in:
 
 1. Go to **Google Ads → Goals → Conversions → + New conversion action**
 2. Create one for each you want (e.g. "Admission form", "Phone call",
-   "WhatsApp click", "Brochure download")
+   "WhatsApp click", "Document download")
 3. On each one, open **Tag setup → Use Google tag** — you'll see something
    like `send_to: 'AW-18267384799/AbC-D1234efGH'`. Copy just the part
    **after the slash**.
@@ -76,7 +76,7 @@ the conversion action in Ads and paste its label in:
    VITE_GOOGLE_ADS_LABEL_ADMISSION=<label you copied>
    VITE_GOOGLE_ADS_LABEL_CALL=<label you copied>
    VITE_GOOGLE_ADS_LABEL_WHATSAPP=<label you copied>
-   VITE_GOOGLE_ADS_LABEL_BROCHURE=<label you copied>
+   VITE_GOOGLE_ADS_LABEL_Document=<label you copied>
    ```
 5. Rebuild (Part 4) and redeploy. That's it — the site-side code for all
    four is already written and waiting, it just needs the label to turn on.
@@ -459,3 +459,4 @@ Go through this on the **live** URL, not localhost, before calling it done:
 Remember: **any `client/.env` change requires `npm run build` again**
 (Part 4) before it shows up on the live site — the built `dist/` folder is
 a frozen snapshot, not something that reads `.env` live.
+

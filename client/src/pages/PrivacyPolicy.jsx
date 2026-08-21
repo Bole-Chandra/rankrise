@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
       <div className="section-title text-center my-4">
         <h2 style={{fontSize: 42}}><i className="fas fa-shield-halved me-1" /> Privacy Policy</h2>
       </div>
-      <p><strong>Effective Date:</strong> 01-01-2024</p>
+      <p><strong>Effective Date:</strong> 01-08-2026</p>
       <p><strong>Website:</strong> www.rankrise.in</p>
       <p><strong>Owner:</strong> RANKRISE Educational Institutions, Hyderabad.</p>
       <div className="policy-section">
@@ -111,7 +111,7 @@ const PrivacyPolicy = () => {
       <div className="policy-section">
         <h4>9. Copyright and Intellectual Property</h4>
         <p className="Textstyle">All content on this website, including but not limited to text, graphics, logos, course
-          materials, videos, brochures, and images, is the property of <strong>RANKRISE EDUCATIONAL
+          materials, videos, and images, is the property of <strong>RANKRISE EDUCATIONAL
             INSTITUTIONS</strong> and protected under Indian copyright law and international treaties. Unauthorized
           use, reproduction, or distribution of our content is strictly prohibited and may result in legal action.</p>
       </div>

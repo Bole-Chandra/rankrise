@@ -16,7 +16,7 @@ Open that file and either:
   VITE_GOOGLE_ADS_LABEL_ADMISSION=AbC-D5678ijKL
   VITE_GOOGLE_ADS_LABEL_CALL=AbC-D9012mnOP
   VITE_GOOGLE_ADS_LABEL_WHATSAPP=AbC-D3456qrST
-  VITE_GOOGLE_ADS_LABEL_BROCHURE=AbC-D7890uvWX
+  VITE_GOOGLE_ADS_LABEL_Document=AbC-D7890uvWX
   ```
 - **Or** hardcode the fallback values directly inside `tracking.js` if you'd rather not use `.env`.
 
@@ -37,7 +37,7 @@ If you add a new phone number to the site later, also add it to `PHONE_NUMBERS` 
 | `click_to_call` + Ads conversion + Meta `Contact` | Any phone number clicked anywhere on the site (top bar, footer — all 4 numbers, floating button, every course/college page's call link) | GA4 + Ads + Meta |
 | `whatsapp_click` + Ads conversion + Meta `Contact` | Floating WhatsApp button clicked | GA4 + Ads + Meta |
 | `youtube_click` + Meta `ViewContent` | YouTube channel link clicked (footer or floating widget) | GA4 + Meta |
-| `file_download` + Ads conversion + Meta `ViewContent` | Brochure PDF downloaded (Admissions page or Contact page) | GA4 + Ads + Meta |
+| `file_download` + Ads conversion + Meta `ViewContent` | Document PDF downloaded (Admissions page or Contact page) | GA4 + Ads + Meta |
 
 Every phone-number and WhatsApp event includes *which* number was clicked (using the friendly labels from `PHONE_NUMBERS`/`WHATSAPP_NUMBERS` in `tracking.js`) and *where on the site* it was clicked (top bar, footer, a specific course page, etc) — so your reports can break down calls by number and by page, not just a single lumped "call" total.
 
@@ -114,7 +114,7 @@ VITE_GOOGLE_ADS_LABEL_LEAD=
 VITE_GOOGLE_ADS_LABEL_ADMISSION=
 VITE_GOOGLE_ADS_LABEL_CALL=
 VITE_GOOGLE_ADS_LABEL_WHATSAPP=
-VITE_GOOGLE_ADS_LABEL_BROCHURE=
+VITE_GOOGLE_ADS_LABEL_Document=
 VITE_META_PIXEL_ID=               # Meta (Facebook/Instagram) Ads
 VITE_GOOGLE_SITE_VERIFICATION=    # Google Search Console
 VITE_BING_SITE_VERIFICATION=      # Bing Webmaster Tools
@@ -138,3 +138,4 @@ VITE_BING_SITE_VERIFICATION=      # Bing Webmaster Tools
 ### Recommended next steps (not yet done — flagging honestly rather than guessing)
 - **Image compression**: several images in `client/public/assets/public` are large JPG/PNG files served at `loading="eager"`. Converting the below-the-fold ones to `loading="lazy"` and compressing/serving next-gen formats (WebP) would meaningfully improve Google PageSpeed/Core Web Vitals scores — this touches a lot of files, so I've left it for a dedicated pass rather than rushing it.
 - **JS bundle size**: the production build is currently ~870KB (one single JS file). Code-splitting by route (`React.lazy`) would reduce initial load time and help Core Web Vitals — also a dedicated-pass item given how many pages it touches.
+

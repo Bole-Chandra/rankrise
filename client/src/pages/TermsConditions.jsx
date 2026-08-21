@@ -29,7 +29,7 @@ const TermsConditions = () => {
     </div>
     <div className="col-md-10">
       <div>
-        <p><strong>Effective Date:</strong> 01-01-2024</p>
+        <p><strong>Effective Date:</strong> 01-08-2026</p>
         <p><strong>Website:</strong> www.rankrise.in</p>
         <p><strong>Owner:</strong> RANKRISE Educational Institutions, Hyderabad.</p>
         <div className="policy-section">

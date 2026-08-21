@@ -84,7 +84,7 @@ node fix-user.js info@rankrise.in "YourNewRealPassword"
 
 **Lives in:** `client/.env` (already done). See `READYTOGO.md` Part 2 if
 you want to add more conversion labels later (call, WhatsApp, admission,
-brochure).
+Document).
 
 ---
 
@@ -121,3 +121,4 @@ brochure).
 Once every box above is filled in and copied to its `.env` file, you're
 ready to follow `READYTOGO.md` start to finish without stopping to look
 anything up.
+

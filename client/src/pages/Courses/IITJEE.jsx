@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import EnquiryForm from '../../components/EnquiryForm';
+import DocumentList from '../../components/DocumentList';
 import { trackCallClick } from '../../utils/analytics';
 
 const IITJEE = () => {
@@ -103,7 +104,7 @@ const IITJEE = () => {
                 <div className="text-center">
                   <div style={{ background: '#ffc107' }} className="p-2">
                     <h4 className="fw-bold mb-1 admission-title">
-                      ADMISSION OPEN for 2026–2027
+                      ADMISSIONS OPEN
                     </h4>
                   </div>
                   <p style={{ fontSize: 20 }} className="mb-1 d-inline-flex">
@@ -114,7 +115,7 @@ const IITJEE = () => {
                   </p>
                 </div>
                 <div className="sidebar text-white shadow enquiry-box">
-                  <h3 className="fw-bold formsubheading text-center d-inline-flex" style={{ fontSize: 24 }}>
+                  <h3 className="fw-bold formsubheading text-center d-block w-100" style={{ fontSize: 24 }}>
                     Your Success, Our Mission
                   </h3>
                   <EnquiryForm />
@@ -346,22 +347,12 @@ const IITJEE = () => {
 
                   {/* Tab 2: Exam Pattern */}
                   <div className="tab-pane fade" id="tab2">
-                    <section className="coming-section my-5">
-                      <h2 className="coming-title fw-bold display-6">
-                        <span className="yellow">COMING</span> SOON
-                      </h2>
-                      <p className="mt-3 fs-5">Stay tuned for something amazing!</p>
-                    </section>
+                    <DocumentList course="iit-jee" section="exam-pattern" />
                   </div>
 
                   {/* Tab 3: Syllabus */}
                   <div className="tab-pane fade" id="tab3">
-                    <section className="coming-section my-5">
-                      <h2 className="coming-title fw-bold display-6">
-                        <span className="yellow">COMING</span> SOON
-                      </h2>
-                      <p className="mt-3 fs-5">Stay tuned for something amazing!</p>
-                    </section>
+                    <DocumentList course="iit-jee" section="syllabus" />
                   </div>
                 </div>
               </div>

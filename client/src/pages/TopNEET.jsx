@@ -15,10 +15,10 @@ const TopNEET = () => {
         <title>Top NEET Coaching Institutes in Hyderabad | Compare & Choose</title>
         <meta name="description" content="Compare the top NEET coaching institutes in Hyderabad. Find the best coaching center for medical entrance preparation." />
         <meta name="keywords" content="top NEET coaching Hyderabad, best NEET institutes comparison" />
-        <link rel="canonical" href="https://rankrise.in/top-neet-coaching" />
+        <link rel="canonical" href="https://rankrise.in/top-neet-institutes" />
         <meta property="og:title" content="Top NEET Coaching Institutes in Hyderabad | Compare & Choose" />
         <meta property="og:description" content="Compare the top NEET coaching institutes in Hyderabad. Find the best coaching center for medical entrance preparation." />
-        <meta property="og:url" content="https://rankrise.in/top-neet-coaching" />
+        <meta property="og:url" content="https://rankrise.in/top-neet-institutes" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Rankrise Educational Institutions" />
         <script type="application/ld+json">
@@ -219,7 +219,7 @@ const TopNEET = () => {
                   <div className="text-center">
                     <div style={{background: '#ffc107'}} className="p-2">
                       <h4 className="fw-bold mb-1 admission-title" style={{fontSize: 18}}>
-                        ADMISSION OPEN for 2026–2027
+                        ADMISSIONS OPEN
                       </h4>
                     </div>
                     <p style={{fontSize: 20}} className="mb-1  d-inline-flex ">
@@ -238,9 +238,9 @@ const TopNEET = () => {
                       <li><Link to="/courses/bitsat" className="redirections">BITSAT Coaching</Link></li>
                       <li><Link to="/college/mpc-iit" className="redirections">INTER: MPC with
                           IIT-JEE</Link></li>
-                      <li><Link to="/college/bipc-neet" className="redirections">INTER: MPC with
+                      <li><Link to="/college/mpc-eamcet" className="redirections">INTER: MPC with
                           EAMCET</Link></li>
-                      <li><Link to="/college/mpc-eamcet" className="redirections">INTER: BIPC with
+                      <li><Link to="/college/bipc-neet" className="redirections">INTER: BIPC with
                           NEET</Link></li>
                     </ul>
                   </div>

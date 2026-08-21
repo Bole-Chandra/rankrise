@@ -7,9 +7,11 @@ const crypto = require('crypto');
 // Ensure directories exist
 const imgDir = path.join(__dirname, '../uploads/images');
 const vidDir = path.join(__dirname, '../uploads/videos');
+const docDir = path.join(__dirname, '../uploads/documents');
 
 if (!fs.existsSync(imgDir)) fs.mkdirSync(imgDir, { recursive: true });
 if (!fs.existsSync(vidDir)) fs.mkdirSync(vidDir, { recursive: true });
+if (!fs.existsSync(docDir)) fs.mkdirSync(docDir, { recursive: true });
 
 // ─── Images: held in memory first, then converted to WebP on disk ───────────
 // Every uploaded image (blog covers, gallery photos) is automatically
@@ -82,4 +84,27 @@ const uploadVideo = multer({
   limits: { fileSize: 100 * 1024 * 1024 } // 100MB
 });
 
-module.exports = { uploadImage, uploadVideo, processImage };
+// ─── Documents (PDF / DOC / DOCX): straight to disk ───────────────────────────
+// Used for course exam patterns and syllabi uploaded by the admin.
+const documentStorage = multer.diskStorage({
+  destination: (req, file, cb) => cb(null, docDir),
+  filename: (req, file, cb) => cb(null, Date.now() + '-' + file.originalname.replace(/\s+/g, '-'))
+});
+
+const documentFilter = (req, file, cb) => {
+  const allowed = [
+    'application/pdf',
+    'application/msword',
+    'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+  ];
+  if (allowed.includes(file.mimetype)) cb(null, true);
+  else cb(new Error('Not a document! Please upload a PDF or Word (.doc / .docx) file.'), false);
+};
+
+const uploadDocument = multer({
+  storage: documentStorage,
+  fileFilter: documentFilter,
+  limits: { fileSize: 25 * 1024 * 1024 } // 25MB
+});
+
+module.exports = { uploadImage, uploadVideo, uploadDocument, processImage };

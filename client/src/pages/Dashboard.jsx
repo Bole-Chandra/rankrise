@@ -7,6 +7,7 @@ import AdminBlogs from '../components/Admin/AdminBlogs';
 import AdminVideoGallery from '../components/Admin/AdminVideoGallery';
 import AdminBlogReview from '../components/Admin/AdminBlogReview';
 import AdminTeacherApprovals from '../components/Admin/AdminTeacherApprovals';
+import AdminCourseDocuments from '../components/Admin/AdminCourseDocuments';
 
 const ADMISSION_STATUSES = ['Pending', 'Reviewed', 'Accepted', 'Rejected'];
 
@@ -137,6 +138,7 @@ const Dashboard = () => {
     { key: 'gallery', icon: 'fa-images', label: 'Photo Gallery' },
     { key: 'videos', icon: 'fa-video', label: 'Video Gallery' },
     { key: 'blogs', icon: 'fa-blog', label: 'Blogs' },
+    { key: 'documents', icon: 'fa-file-lines', label: 'Course Documents' },
     { key: 'blogReview', icon: 'fa-file-circle-check', label: 'Blog Review' },
     { key: 'teachers', icon: 'fa-chalkboard-user', label: 'Teacher Approvals' },
   ];
@@ -463,6 +465,7 @@ const Dashboard = () => {
           {activeTab === 'gallery' && <AdminGallery />}
           {activeTab === 'videos' && <AdminVideoGallery />}
           {activeTab === 'blogs' && <AdminBlogs />}
+          {activeTab === 'documents' && <AdminCourseDocuments />}
           {activeTab === 'blogReview' && <AdminBlogReview />}
           {activeTab === 'teachers' && <AdminTeacherApprovals />}
         </div>

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import api from '../utils/api';
-import { trackLeadSubmitted, trackFormStart, trackDownload } from '../utils/analytics';
+import { trackLeadSubmitted, trackFormStart } from '../utils/analytics';
 const Admissions = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -49,12 +49,12 @@ const Admissions = () => {
   return (
     <div className="admissions-page">
       <Helmet>
-        <title>Admissions Open 2026-2027 | Rankrise Coaching Centers</title>
-        <meta name="description" content="Apply now for IIT-JEE, NEET, EAMCET & BITSAT coaching at Rankrise. Admissions open for 2026-2027 session. Scholarships available for meritorious students." />
-        <meta name="keywords" content="Rankrise admissions, coaching admission 2026, IIT JEE admission Hyderabad, NEET coaching enrollment" />
+        <title>Admissions Open | Rankrise Coaching Centers</title>
+        <meta name="description" content="Apply now for IIT-JEE, NEET, EAMCET & BITSAT coaching at Rankrise. Admissions are open. Scholarships available for meritorious students." />
+        <meta name="keywords" content="Rankrise admissions, coaching admissions, IIT JEE admission Hyderabad, NEET coaching enrollment" />
         <link rel="canonical" href="https://rankrise.in/admissions" />
-        <meta property="og:title" content="Admissions Open 2026-2027 | Rankrise Coaching Centers" />
-        <meta property="og:description" content="Apply now for IIT-JEE, NEET, EAMCET & BITSAT coaching at Rankrise. Admissions open for 2026-2027 session. Scholarships available for meritorious students." />
+        <meta property="og:title" content="Admissions Open | Rankrise Coaching Centers" />
+        <meta property="og:description" content="Apply now for IIT-JEE, NEET, EAMCET & BITSAT coaching at Rankrise. Admissions are open. Scholarships available for meritorious students." />
         <meta property="og:url" content="https://rankrise.in/admissions" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Rankrise Educational Institutions" />
@@ -77,19 +77,6 @@ const Admissions = () => {
               <i className="fa-solid fa-graduation-cap me-2"></i> ADMISSIONS
             </h1>
             <p className="lead">Join the Best Coaching Institute in Hyderabad for IIT-JEE & NEET</p>
-
-            {/* Download Brochure Button Moved Here */}
-            <div className="mt-4">
-              <a
-                href="/assets/brochure/Rankrise-Brochure.pdf"
-                download
-                onClick={() => trackDownload('Rankrise-Brochure.pdf', 'brochure')}
-                className="btn btn-warning btn-lg fw-bold px-4 rounded-pill shadow-sm text-dark"
-              >
-                <i className="fa-solid fa-book me-2"></i>
-                Download Brochure
-              </a>
-            </div>
           </div>
 
           <div className="row justify-content-center">

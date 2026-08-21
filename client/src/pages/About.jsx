@@ -85,7 +85,7 @@ const About = () => {
                 <div className="sidebar text-white shadow enquiry-box ">
                   <div className="text-center">
                     <h3 className="fw-bold">ADMISSION ENQUIRY</h3>
-                    <p className="formsubheading fw-bold mb-0  d-inline-flex ">
+                    <p className="formsubheading fw-bold mb-0 d-block text-center">
                       BEGIN YOUR SUCCESS JOURNEY
                     </p>
                     <p className="formsubheading fw-bold">
